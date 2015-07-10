@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> [jquery01.html]  </title>
+<style type="text/css">
+	 body{
+	 	margin: 50px auto;
+		padding: 100px;	
+	 	background:#C9EBB6;
+	 }
+	 
+	 .thumbs{
+	 	width:90px;
+	 	float:left;
+	 }
+	 
+	 .thumbs  img{
+	 	border: solid  3px #FF0000;
+	 	padding: 5px;
+	 }
+	 
+	.thumbs  img:hover{
+	 	border-color: #FF00FF;
+	 }
+	 
+	#largeImg {
+		border: solid 1px #ccc;
+		width: 500px;
+		height: 280px;
+		padding: 5px;
+	    margin-left:20px;
+	    float: left;
+	}
+	
+	#caption{
+		background:#FF99FF ;
+		border: solid 2px #FF0000;
+		padding: 10px;
+		height: 40px;
+		position:relative
+	}
+	
+	#hb{
+		border: solid 1px #ccc;
+		width: 500px;
+		height: 50px;
+		padding: 5px;
+	    margin-left:20px;
+	    float: left;
+	}
+	
+</style>
+
+	<script  src="jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="data/js/jquery-2.0.3.min.js"> </script>
+	<script src="data/js/jquery-2.0.3.js"> </script>
+	<script src="data/js/jquery-1.7.2.min.js"></script>
+	<script src="data/js/jquery-ui-1.8.23.custom.min.js"></script>
+
+</head>
+
+<body>
+    <div class="thumbs">
+        <a href="images/first.png" title="image1"><img src="images/th_first.png" /></a>
+        <em>
+        <font size=5><b>
+          1조 힐튼호텔 SKY Restaurant
+        </b></font>
+        </em>
+        
+        <a href="images/two.png" title="image2"><img src="images/th_two.png" /></a>
+        
+        <em>
+        <font size=5><b>
+         2조 워커힐호텔 Night Show
+        </b></font> 
+        </em>
+        
+        <a href="images/three.png" title="image3"><img src="images/th_three.png" /></a>
+        <em>
+        <font size=5><b>
+         3조 롯데호텔 비지니스Room
+        </b></font>
+        </em>
+        
+       <a href="images/last.png" title="image3"><img src="images/th_last.png" /></a>
+        <em>
+        <font size=5><b>
+         5조 역삼동 르네상스호텔
+        </b></font>
+        </em>
+        
+      <a href="images/lucky.png" title="image3"><img src="images/th_lucky.png" /></a>
+        <em>
+        <font size=5><b>
+         7조 홍제동 스위스그랜드호텔
+        </b></font>
+        </em>
+    </div>
+    
+    <div id="largeImg">
+    	<img src="images/three.png" />
+    	<div id="caption"></div>
+    </div>
+     	<img id="hb" src="../images/bar.gif" width=500 height=50><br>
+    	<img id="hb" src="../images/bar.gif" width=500 height=50><br>
+  
+
+<!---------- jQuery code Start ---------->
+<script>
+ 	$(".thumbs em").hide( ) ;
+ 	
+	$(".thumbs a").click(function(){
+		$("#caption").remove( );
+		//식사후 여기서부터 다시 설명 
+		var path = $(this).attr("href") ;
+		$("#largeImg > img").attr( {src:path}) ;
+		var msg=$(this).next("em").text( );
+		$("#largeImg").append("<div id='caption'></div>") ;
+		$("#largeImg #caption").text(msg);
+		var h=$("#largeImg #caption").height()+5 ;
+		//$("#largeImg #caption").animate( {top:h } , 1000) ;
+		return false;
+	});
+</script>
+
+</body>
+</html>
+

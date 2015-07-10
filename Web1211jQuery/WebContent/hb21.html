@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> [hb21fade.html]  </title>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="data/js/jquery-2.0.3.min.js"> </script>
+	<script src="data/js/jquery-2.0.3.js"> </script>
+	<script type="text/javascript"  src="data/js/jquery-1.7.2.min.js"></script>
+	
+	<style type="text/css">
+		p{ font-size:20pt; font-style:bold;  }
+	</style>
+</head>
+
+<body>
+
+	<img src="./images/sample3.jpg" alt="" width="300" height="307" />
+<br>
+	<button title="0.3"  style="font-size:20pt">0.3</button> &nbsp;
+	<button title="0.5" style="font-size:20pt">0.5</button> &nbsp;
+	<button title="0.8"  style="font-size:20pt">0.8</button> &nbsp;
+	<button title="1" style="font-size:20pt">1.0</button>
+	
+
+<!---------- jQuery code Start ---------->
+<script>
+	$("body").append("<p></p>");
+	
+	$('button').click(function() {
+		var opacity = $(this).attr("title");
+	    $('img').fadeTo("slow" , opacity ,  function() {
+	    $("p").append('display : '+$(this).css("display")+"<br/>");
+		$("p").append('opacity : '+$(this).css("opacity")+"<br/><br/>");
+	  });
+	});
+</script>
+
+</body>
+</html>

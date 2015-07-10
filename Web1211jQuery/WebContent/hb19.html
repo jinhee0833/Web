@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> [hb19event.html]  </title>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="data/js/jquery-2.0.3.min.js"> </script>
+	<script src="data/js/jquery-2.0.3.js"> </script>
+	<script type="text/javascript"  src="data/js/jquery-1.7.2.min.js"></script>
+
+<style>
+ 	div { width:220px; height:120px; background:#999;padding:10px 10px 10px 10px;}
+ 	a { display:block; width:220px; height:120px; background:#0F0; border:#000 thin solid;}
+</style>
+</head>
+<body>
+
+<div>
+   <a href="#">div</a> 
+</div>
+
+<script>
+	$("div").click(function(e) {
+	    $(this).css("background","yellow");
+	    $(this).text("hb19.html  Coffee Latte  Cappuccino19 ") ;
+	});
+	$("a").click(function(e) {
+	     $(this).css("background","red"); //color:red
+	     $(this).text("hb19.html Message19") ;
+		 //이벤트 흐름을 정지하여 더이상 부모
+		 //e.stopPropagation();
+	});
+</script>
+
+</body>
+</html>

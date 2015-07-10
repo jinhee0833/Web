@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> [hb16.html]  </title>
+	<script src="data/js/jquery-1.7.2.min.js"></script>
+	<style>
+  		div {border:#00F solid 2px;}
+	</style>
+</head>
+ 
+<body>
+<div id="container"></div>
+<button id ="append"  title="append">그림추가버튼</button>
+
+<script>          
+     $("#append").click(function(e) {
+        $("div#container").append( fetchImg() );
+    });	
+
+   function fetchImg(){	   
+    var n = Math.ceil( Math.random()*5 );	  
+	var imgPath  ="<img  src='./images/pic"+n+".jpg' height='100' width='100' />"; 
+    return imgPath ; 
+  } //end
+   
+</script>
+</body>
+</html>
+
+

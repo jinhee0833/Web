@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> [hb18addClass.html]  </title>
+	<script type="text/javascript"  src="data/js/jquery-1.7.2.min.js"></script>
+	<style>
+		  img{ padding:7px; background:#666;}
+		  img.type1 { padding:15px; background:#EF4018;}
+		  img.type2 { padding:20px; background:#9AB92E;}
+		  img.type3 { padding:17px; background:#05184D;}
+		  img.type4 { padding:7px; background:#FF184D;}
+		  img.type5 { padding:37px; background:#0518FF;}
+	</style>
+</head>
+
+<body>
+<img src="./images/th1.jpg"   width='200'  alt="" />
+<img src="./images/th2.jpg"   width='200'  alt="" />
+<img src="./images/th3.jpg"   width='200'   alt="" />
+
+<script>
+	$("img").click(function(e) {
+	    var n = Math.ceil( Math.random()*5); //1부터 5까지 난수
+		var existClass = $(this).attr("class");
+		$(this).removeClass(existClass).addClass("type"+n);
+	});
+</script>
+
+</body>
+</html>
