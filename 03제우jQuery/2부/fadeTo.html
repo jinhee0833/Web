@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> fadeTo()  </title>
+<!-- jQuery library -->
+<script src="jquery-1.7.2.min.js"></script>
+</head>
+
+<body>
+
+
+
+<img src="sample3.jpg" alt="" width="300" height="307" />
+<br>
+<button title="0">0</button>
+<button title="0.3">0.3</button>
+<button title="0.6">0.6</button>
+<button title="1">1</button>
+
+<!---------- jQuery code Start ---------->
+<script>
+$("body").append("<p></p>");
+
+$('button').click(function() {
+	var opacity = $(this).attr("title");
+    $('img').fadeTo("slow" , opacity ,  function() {
+    $("p").append('display : '+$(this).css("display")+"<br/>");
+	$("p").append('opacity : '+$(this).css("opacity")+"<br/>");
+  });
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> animate()를 활용한 가로slide  </title>
+<!-- jQuery library -->
+<script src="jquery-1.7.2.min.js"></script>
+<style>
+ div{ overflow:hidden; width:300px; display:inline;}
+</style>
+</head>
+<body>
+
+<div>
+	<img src="sample1.jpg" alt="" width="300" height="307"/>
+</div>
+
+
+<button id ="up">slide감추기</button>
+<button id ="down">slide보이기</button>
+
+<!---------- jQuery code Start ---------->
+<script>
+
+$('#up').click(function() {
+  $('div').animate({width:"0px"},1000);  
+});
+
+$('#down').click(function() {
+  $('div').animate({width:"300px"},1000);  
+});
+
+
+
+</script>
+
+</body>
+</html>

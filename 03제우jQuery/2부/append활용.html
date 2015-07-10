@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> append()활용  </title>
+<!-- jQuery library -->
+<script src="jquery-1.7.2.min.js"></script>
+
+<style>
+  div {border:#00F solid 1px;}
+</style>
+</head>
+ 
+<body>
+
+<div id="container"></div>
+<button id ="append"  title="append">append</button>
+
+
+<!---------- jQuery code Start ---------->
+<script>
+          
+     $("#append").click(function(e) {
+		 
+        $("div#container").append( fetchImg() );
+    });	
+
+  
+   function fetchImg(){	   
+    var n = Math.ceil( Math.random()*3 );	  
+	var imgPath  ="<img src='pic"+n+".jpg' alt='' width='100' height='100' />"; 
+    return imgPath ; 
+   }
+  
+  
+
+</script>
+
+</body>
+</html>

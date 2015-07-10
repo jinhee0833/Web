@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> hidden, visible 선택자 </title>
+<!-- jQuery library -->
+<script src="jquery-1.7.2.min.js"></script>
+
+</head>
+<body>
+
+<div id="container">
+
+   <ul class="nav1">
+     <li style="display:none"> apple </li>
+     <li> banana </li>
+     <li> grape </li>
+   </ul>
+
+   <ul class="nav2">
+     <li> lion </li>
+     <li style="display:none"> tiger </li>
+     <li> fox </li>
+   </ul>
+   
+</div>
+
+<!---------- jQuery code Start ---------->
+<script>
+function showTime(){
+ $("li:hidden").show(1000)
+}
+ 
+setTimeout("showTime()",3000);
+ 
+</script>
+
+</body>
+</html>

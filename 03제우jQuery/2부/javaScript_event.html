@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>  javaScript event </title>
+
+
+<style>
+  div{
+  	width:100px;
+  	height:100px;
+	background-color:#FC9;
+  }
+</style>
+
+</head>
+
+<body>
+
+<div id="box">클릭</div>
+
+
+<script>
+
+   function fnClick(){
+	  alert("hello");   
+   }
+
+	var evtDiv = document.getElementById('box');
+	if(evtDiv.addEventListener) {
+		evtDiv.addEventListener("click", fnClick);
+	} else {
+		evtDiv.attachEvent("onclick", fnClick);
+	}
+    
+</script>
+</body>
+
+</html>

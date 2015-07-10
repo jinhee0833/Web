@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Child Filters </title>
+<!-- jQuery library -->
+<script src="jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<div id="container">
+
+    <ul class="nav1">
+        <li> 0 </li>
+        <li> 1 </li>
+        <li> 2 </li>
+        <li> 3 </li>
+    </ul>
+      
+    <ul class="nav2">
+        <li> 0 </li>
+        <li> 1 </li>
+        <li> 2 </li>
+        <li> 3 </li>
+        <li> 4 </li>
+    </ul>
+
+</div>
+<!---------- jQuery code Start ---------->
+<script>
+// 한줄씩 주석으로 처리해가며 확인하여 보세요
+
+ $("li:first-child").css("background-Color","yellow");
+// $("li:last-child").css("background-Color","yellow");
+// $("li:nth-child(2)").css("background-Color","yellow");
+// $("li:nth-child(even)").css("background-Color","yellow");
+// $("li:nth-child(odd)").css("background-Color","yellow");
+// $("li:nth-child(2n+1)").css("background-Color","yellow");
+// $("li:nth-child(3n+2)").css("background-Color","yellow");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Filtering </title>
+<!-- jQuery library -->
+<script src="jquery-1.7.2.min.js"></script>
+
+<style>
+  div, p {float:left;margin:10px; background-color:#FFF;}
+  div#sub { width:80px; height:80px; border:#000 thin solid;}
+  div.middle { width:80px; height:80px; border:#000 thin solid;}
+  p { width:50px; height:50px; border:#000 thin solid;}
+</style>
+</head>
+<body>
+<div id="main">
+    <div class="middle">div</div>
+    <p>p</p>
+    <p>p</p>
+    <p>p</p>
+    <p>p</p>
+    <div id = "sub">
+      <p>div p</p>
+    </div>
+
+</div>
+<!---------- jQuery code Start ---------->
+<script>
+// 한줄씩 주석으로 처리해가며 확인하여 보세요
+ $("div#main p").first().css("background-Color","yellow");
+// $("div#main p").last().css("background-Color","yellow");
+//$("div#main p").eq(1).css("background-Color","yellow");
+// $("div#main div").filter(".middle").css("background-Color","yellow");
+// $("div#main div").not(".middle").css("background-Color","yellow");
+</script>
+
+</body>
+</html>

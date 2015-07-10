@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> addClass_removeClasss </title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<style>
+ 
+  img{ padding:5px; background:#666;}
+  img.type1 { padding:5px; background:#EF4018;}
+  img.type2 { padding:5px; background:#9AB92E;}
+  img.type3 { padding:5px; background:#05184D;}
+  img.type4 { padding:5px; background:#FF184D;}
+  img.type5 { padding:5px; background:#0518FF;}
+
+</style>
+</head>
+
+<body>
+<img src="th1.jpg" alt="" />
+<img src="th2.jpg" alt="" />
+<img src="th3.jpg" alt="" />
+
+<!---------- jQuery code Start ---------->
+
+<script>
+
+$("img").click(function(e) {
+	
+    var n = Math.ceil( Math.random()*5);
+	var existClass = $(this).attr("class");
+	$(this).removeClass(existClass).addClass("type"+n);
+	
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+

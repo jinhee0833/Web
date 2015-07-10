@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> setInterval </title>
+<script>
+
+var count = 1;   
+function gallery(){
+	console.log("다음사진");	
+	if(count == 5){
+		clearInterval(clearId);
+	}
+	count = count+1;
+}
+var clearId = setInterval ("gallery();",1000);
+
+</script>
+
+</head>
+
+<body>
+
+</body>
+</html>

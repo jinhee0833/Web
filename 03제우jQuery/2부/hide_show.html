@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> hide()/show()  </title>
+<!-- jQuery library -->
+<script src="jquery-1.7.2.min.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+
+
+<img src="sample1.jpg" alt="" width="300" height="307"/><br/>
+<button id ="hide">hide()</button>
+<button id ="show">show()</button>
+
+<!---------- jQuery code Start ---------->
+<script>
+
+$('#show').click(function() {
+  $('img').show(1000, function() {
+    alert('지금 상태는'+$(this).css("display")+"입니다.");
+  });
+});
+
+$('#hide').click(function() {
+  $('img').hide(1000, function() {
+    alert('지금 상태는'+$(this).css("display")+"입니다.");
+  });
+});
+
+</script>
+
+</body>
+</html>

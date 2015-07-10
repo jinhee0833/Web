@@ -1,0 +1,92 @@
+	#member_center {
+		width:400px;
+		margin: 0 auto;
+		padding:20px;
+		background-position: center;
+		height: 100%;
+    }
+    #member_center2 {
+		width:400px;
+		margin: 0 auto;
+		padding:20px;
+		padding-top: 200px;
+		padding-bottom: 500px;
+		text-align: center;
+    }
+	
+    #member_title{
+    	padding:20px;
+    	font-weight:bold;
+    	text-align:center;
+    	color:#6e6464;
+    	font-size: 4em;
+    	font-family: Times New Roman;
+    }
+    #member_bottom{
+    	text-align: center;
+    }
+    
+    #member_tableF{
+    	width:400px;
+		margin:0 auto;
+		border: 1px solid #DDD;
+		background: #FFF;
+		color:black;
+		font-size:0.8em;
+    }
+    #memberF {
+    	padding-top:200px;
+		width:400px;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 50px;
+    }
+   	#member_hr{
+    	width:370px;
+		border-bottom: 1px solid #CCC;
+		margin-top: 10px;
+		margin-bottom: 10px;
+    }
+    .member_ta{
+    	width:260px;
+    	padding:5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		border-style: none;
+    }
+    .member_ta2{
+		margin-top: 5px;
+		padding-left:5px;
+		color:red;
+    }
+    .member_ta3{
+		color:blue;
+    }
+    .member_ta4{
+		width:240px;
+    	padding:5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		border-style: none;
+    }
+    .member_bt{
+		padding:5px;
+		text-align: right;
+    }
+    .member_bt2{ 
+		width:150px; 
+		padding:10px;
+		background:#6e6464;
+		color:#FFF;
+		letter-spacing:5px;
+    }
+    .member_bt3{ 
+		width:200px; 
+		padding:10px;
+		background:#6e6464;
+		color:#FFF;
+		letter-spacing:5px;
+    }
+    .member_tr{
+		padding:10px;
+	}
