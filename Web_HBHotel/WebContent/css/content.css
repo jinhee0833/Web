@@ -1,0 +1,36 @@
+ @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+      @import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+      @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+      @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+      @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+      @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+
+#b3{
+	float:right;
+	margin-right:30px;
+	margin-top:350px;
+	color:white;
+	font-family:'Nanum Myeongjo';
+}
+#b3  a.rollover img{boarder-width:0px; display:inline;}
+#b3  a.rollover img.over{display:none;}
+#b3  a.rollover:hover { border:0px }
+#b3  a.rollover:hover img { display:none; }
+#b3  a.rollover:hover img.over { display:inline; }
+#b2 {
+	
+	font-size:15px;
+	float:left;
+ 	font-family:Arial;
+ 	margin-left:250px;
+ 	margin-top:350px;
+ 	color:white;
+ 	font-family:'Nanum Myeongjo';
+}
+#b4{font-size:15px;
+	float:left;
+	margin-top:10px;
+ 	font-family:Arial;
+ 	margin-left:250px;
+ 	color:white;
+ 	font-family:'Nanum Myeongjo';}

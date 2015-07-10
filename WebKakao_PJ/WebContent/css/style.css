@@ -1,0 +1,582 @@
+/* 기본 스타일*/
+BODY, table, tr, td	{font-family: 굴림; font-size: 9pt; color:#7F7F7F; line-height: 18px;}
+ a:link    		{font:9pt 굴림;color:#7F7F7F;text-decoration:none; line-height: 18px;}
+ a:visited 		{font:9pt 굴림;color:#7F7F7F;text-decoration:none; line-height: 18px;}
+ a:active  		{font:9pt 굴림;color:#7F7F7F;text-decoration:none; line-height: 18px;}
+ a:hover   	{color:#0054A6;text-decoration:underline; line-height: 18px;}
+
+/* 스크롤바*/
+body {
+scrollbar-face-color:#FFFFFF;
+scrollbar-highlight-color:#C9C9C2;
+scrollbar-3dlight-color: #FFFFFF;
+scrollbar-shadow-color:#C9C9C2;
+scrollbar-darkshadow-color: #FFFFFF;
+scrollbar-track-color: #F2F2F2;
+scrollbar-arrow-color:#C9C9C2}
+
+/* 메인 서치 스타일 */
+.mainsearch 	{border:solid 1; font-family:굴림,Tahoma,Verdana; font-size:9pt; cursor : text; color:77819a;  background-color:white; width:372px; height:19px; border-color:#bdcddc;}
+
+/* 박스 스타일 */
+.menu_go 	{border:solid 1; font-family:굴림,Tahoma,Verdana; font-size:9pt; cursor : text; color:77819a;  background-color:white; width:160px; height:22px; border-color:#7F9DB9;}
+
+/* 연안모니터링 */
+.menu_mo 	{border:solid 1; font-family:굴림,Tahoma,Verdana; font-size:9pt; cursor : text; color:77819a;  background-color:white; width:113px; height:22px; border-color:#7F9DB9;}
+
+/* 카피라이트 */
+.copyright		{font-family: "굴림", "Gulim"; font-size: 12px; line-height: 18px; color: #727274; text-decoration:none;}
+a.copyright:link 	{font-family: "굴림", "Gulim"; font-size: 12px; line-height: 18px; color: #727274; text-decoration:none;}
+a.copyright:visited 	{font-family: "굴림", "Gulim"; font-size: 12px; line-height: 18px; color: #727274; text-decoration:none;}
+a.copyright:active 	{font-family: "굴림", "Gulim"; font-size: 12px; line-height: 18px; color: #727274; text-decoration:none;}
+a.copyright:hover 	{font-family: "굴림", "Gulim"; font-size: 12px; line-height: 18px; color: #3d3d3e; text-decoration:underline;}
+
+/* 위치 */
+.location			{font-family: "돋움", "돋움체"; font-size: 10px; line-height: 18px; color: #7F7F7F; text-decoration:none;}
+a.location:link 	{font-family: "돋움", "돋움체"; font-size: 10px; line-height: 18px; color: #7F7F7F; text-decoration:none;}
+a.location:visited 	{font-family: "돋움", "돋움체"; font-size: 10px; line-height: 18px; color: #7F7F7F; text-decoration:none;}
+a.location:active 	{font-family: "돋움", "돋움체"; font-size: 10px; line-height: 18px; color: #7F7F7F; text-decoration:none;}
+a.location:hover 	{font-family: "돋움", "돋움체"; font-size: 10px; line-height: 18px; color: #3D3D3D; text-decoration:underline;}
+
+/* 메인 타이틀 */
+.main_title			{font-family: "굴림", "굴림체"; font-size: 12px; line-height: 16px; color: #385ba1; font-weight:bold; text-decoration:none;}
+a.main_title:link 	{font-family: "굴림", "굴림체"; font-size: 12px; line-height: 16px; color: #385ba1; font-weight:bold; text-decoration:none;}
+a.main_title:visited 	{font-family: "굴림", "굴림체"; font-size: 12px; line-height: 16px; color: #385ba1; font-weight:bold;  text-decoration:none;}
+a.main_title:active 	{font-family: "굴림", "굴림체"; font-size: 12px; line-height: 16px; color: #385ba1; font-weight:bold; text-decoration:none;}
+a.main_title:hover 	{font-family: "굴림", "굴림체"; font-size: 12px; line-height: 16px; color: #7194da; font-weight:bold; text-decoration:underline;}
+
+
+
+
+/* ===== 민원서비스 ===== */
+/*민원서비스 도움말 text link */
+선없는 링크1 예) class=ser_In
+a.ser_In:        {color:#7F7F7F; text-decoration:none;}   a.ser_In:link    {color:#7F7F7F; text-decoration:none;}
+a.ser_In:visited {color:#7F7F7F; text-decoration:none;}   a.ser_In:hover   {color:#0067aa; text-decoration:underline;}
+
+/* 민원서비스 메인 텍스트*/
+.ser_main          { font-family: "굴림", "Gulim"; font-size: 12px;  line-height: 18px;  text-align: left;	 color: #545454;
+padding-left: 10px;  padding-right: 10px;}
+
+/* 민원서비스 메인 텍스트 강조*/
+.ser_main_blue     { font-family: "굴림", "Gulim"; font-size: 12px;  line-height: 18px;  text-align: left;	 color: #0067aa; }
+
+/* 민원서비스 메인 텍스트 강조*/
+.ser_main_blue_l   { font-family: "굴림", "Gulim"; font-size: 12px;   text-decoration:underline; line-height: 18px;  text-align: left;	 color: #0067aa; }
+
+/* 민원서비스 faq 검색 title */
+.search_t           { font-family: "굴림", "Gulim";  font-size: 12px;   font-weight:bold;  color: #004674;  padding-top: 3px;}
+
+/* 민원서비스 faq best 10 */
+.ser_list          { font-family: "굴림", "Gulim"; font-size: 12px;  padding-top: 10px;  padding-bottom: 2px;  padding-left: 20px;	 color: #3d6689; }
+/* 민원서비스 faq best 10 link*/
+.ser_list  A:link ,  .ser_list A:visited  { color: #3d6689;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+.ser_list  A:hover , .ser_list A:active   { color: #f26522;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+
+/* 민원서비스 faq 검색결과 list */
+.ser_list01        { font-family: "굴림", "Gulim";  font-size: 12px;  background-color: #f8f8f8;  padding-top: 10px; padding-bottom: 5px;padding-left: 30px;  color: #444444; }
+
+/* 민원서비스 faq 검색결과 단어 */
+.ser_word01        { font-family: "굴림", "Gulim";  font-size: 12px;  color: #0067aa;  font-weight: bold;}
+/*민원서비스 faq 검색결과 단어 link*/
+.ser_word01 A:link,  .ser_word01  A:visited { color: #0067aa; text-decoration:none;     font-family: "굴림", "Gulim"; font-size: 12px; font-weight: bold;}
+.ser_word01 A:hover, .ser_word01  A:active  { color: #0067aa; text-decoration:underline; font-family: "굴림", "Gulim"; font-size: 12px; font-weight: bold;}
+
+/* 민원서비스 faq 검색결과 list */
+.ser_list02        { font-family: "굴림", "Gulim";  font-size: 12px;   padding-top: 5px;  padding-left: 20px;   color: #444444; }
+
+/* 민원서비스 faq 검색결과 단어 */
+.ser_word02        { font-family: "굴림", "Gulim";  font-size: 12px;  color: #f26522;  font-weight: bold;}
+/*민원서비스 faq 검색결과 단어 link*/
+.ser_word02 A:link,  .ser_word02  A:visited  { color: #f26522; text-decoration:none;     font-family: "굴림", "Gulim"; font-size: 12px; font-weight: bold;}
+.ser_word02 A:hover, .ser_word02  A:active   { color: #f26522; text-decoration:underline; font-family: "굴림", "Gulim"; font-size: 12px; font-weight: bold;}
+
+/* 민원서비스 FAQ 검색 입력 폼 */
+.input_search01    { font-family: "Arial", "굴림";  font-size: 11px;  height: 18px;  width: 305px; padding: 2px 0px 0px 3px;  
+border: 1px solid #cecece;	color: #666666;   text-decoration: none;	background-color: #FFFFFF;	margin: 0px;}
+
+/* 민원서비스 FAQ 검색 선택 폼 */
+.input_select01    { font-family: "Arial", "굴림";  font-size: 11px;  height: 18px;	padding: 2px 0px 0px 3px; border: 1px solid #cecece;		
+color: #666666;	  text-decoration: none;	background-color: #FFFFFF;	margin: 0px;}
+
+
+
+/* =====게시판 내용보기 카테고리별 color===== */
+/*민원서비스 게시판 보기 제목  */
+.ser_blue          { background-color: #e5f0f6;  font-family: "굴림", "Gulim";  font-size: 12px;  color:#444444;  padding-left:10px;  padding-top:10px;  padding-bottom:6px;}
+
+/*민원서비스 게시판 내용보기 text  */
+.ser_text          { font-family: "굴림", "Gulim" ;  font-size: 12px;  color:#545454;  padding-left:5px;  padding-right:5px; 
+padding-top:10px;  padding-bottom:6px; }
+
+/*민원서비스 게시판 내용보기 text link*/
+.ser_text A:link,  .ser_text  A:visited { color: #444444; text-decoration:none;     font-family: "굴림", "Gulim"; font-size: 12px; }
+.ser_text A:hover, .ser_text  A:active  { color: #0067aa; text-decoration:underline; font-family: "굴림", "Gulim"; font-size: 12px; }
+
+/*민원서비스 게시판 내용보기  */
+.ser_text01        { font-family: "굴림", "Gulim" ;  font-size: 12px;  color:#444444;  }
+
+/*민원서비스 게시판 보기 제목 gray */
+.ser_gray         { background-color: #f0f0f0;  font-family: "굴림", "Gulim";  font-size: 12px;  color:#444444;  padding-left:10px;  padding-top:10px;  padding-bottom:6px;}
+
+/*민원서비스 게시판 list title top  */
+.ser_title        { background-color: #f2f7fb;  font-family: "굴림", "Gulim" ; font-size: 12px;  color:#0067aa;  text-align: center; 
+padding-top:8px; padding-bottom:4px;}
+
+/*민원서비스 게시판 숫자텍스트 */
+.ser_sum_l	  { font-family:  "굴림", "Gulim"; font-size: 12px;  color:#666666;  text-align: right; padding-right:10px; 
+padding-top:8px;  padding-bottom: 3px;}
+.ser_sum_c	  { font-family:  "굴림", "Gulim"; font-size: 12px;  color:#666666;  text-align: center;  padding-top:8px;
+padding-bottom: 3px;}
+
+/*민원서비스 게시판 텍스트 */
+.ser_text01       { font-family:  "굴림", "Gulim"; font-size: 12px;  color:#666666;  padding-left:5px;    padding-top:8px;
+padding-bottom: 3px;}
+.ser_text01_c     { font-family:  "굴림", "Gulim"; font-size: 12px;  color:#666666;  text-align: center;  padding-top:8px; 
+padding-bottom: 3px;}
+
+/* 민원서비스 게시판 link*/
+.ser_sum_l  A:link,  .ser_sum_l  A:visited { color: #444444;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+.ser_sum_l  A:hover, .ser_sum_l  A:active  { color: #0067aa;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+
+.ser_sum_c  A:link,  .ser_sum_c  A:visited { color: #444444;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+.ser_sum_c  A:hover, .ser_sum_c  A:active  { color: #0067aa;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+
+.ser_text01   A:link,  .ser_text01   A:visited { color: #444444;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+.ser_text01   A:hover, .ser_text01   A:active  { color: #0067aa;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+
+.ser_text01_c A:link, .ser_text01_c  A:visited { color: #444444;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+.ser_text01_c A:hover,.ser_text01_c  A:active  { color: #0067aa;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+
+/*민원서비스 게시판 페이지 하단 숫자 */
+.sum_c	  { font-family:   "돋움", "돋움체"; font-size: 12px;  color: #444444; text-align: center; }
+.sum_c A:link, .sum_c A:visited {color: #444444; text-decoration:none; font-family: "굴림", "Gulim"; font-size: 12px;}
+.sum_c A:hover,.sum_c A:active  {color: #0067aa; text-decoration:none; font-family: "굴림", "Gulim"; font-size: 12px;}
+
+
+
+
+/* 이용안내 게시판 보기 제목  */
+.gu_green          { background-color: #f0f8f5;  font-family: "굴림", "Gulim";  font-size: 12px;  color:#147e52;  padding-left:10px;  padding-top:10px;  padding-bottom:6px;}
+
+/* 이용안내 회원정보 나의 게시물 게시판 제목  */
+.gu_title          { background-color: #f4faf8;  font-family: "굴림", "Gulim";  font-size: 12px;  color:#1f9866;   text-align: center;padding-top:8px;  padding-bottom:4px;}
+
+/* 이용안내 회원정보 나의 게시물 게시판 게시판 link*/
+.gu_sum_l	  { font-family:  "굴림", "Gulim"; font-size: 12px;  color:#666666;  text-align: right; padding-right:10px; 
+padding-top:8px;  padding-bottom: 3px;}
+.gu_sum_c	  { font-family:  "굴림", "Gulim"; font-size: 12px;  color:#666666;  text-align: center;  padding-top:8px;
+padding-bottom: 3px;}
+.gu_text01       { font-family:  "굴림", "Gulim"; font-size: 12px;  color:#666666;  padding-left:5px;    padding-top:8px;
+padding-bottom: 3px;}
+.gu_text01_c     { font-family:  "굴림", "Gulim"; font-size: 12px;  color:#666666;  text-align: center;  padding-top:8px; 
+padding-bottom: 3px;}
+
+.gu_sum_l  A:link,  .gu_sum_l  A:visited { color: #444444;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+.gu_sum_l  A:hover, .gu_sum_l  A:active  { color: #1f9866;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+
+.gu_sum_c  A:link,  .gu_sum_c  A:visited { color: #444444;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+.gu_sum_c  A:hover, .gu_sum_c  A:active  { color: #1f9866;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+
+.gu_text01   A:link,  .gu_text01   A:visited { color: #444444;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+.gu_text01   A:hover, .gu_text01   A:active  { color: #1f9866;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+
+.gu_text01_c A:link, .gu_text01_c  A:visited { color: #444444;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+.gu_text01_c A:hover,.gu_text01_c  A:active  { color: #1f9866;  text-decoration:none;  font-family: "굴림", "Gulim"; font-size: 12px;}
+
+
+/*========= 이용안내 ==========*/
+/* 이용안내 faq 검색어 text */
+.search_text        { font-family: "돋움", "돋움체";  font-size: 11px;  font-weight:bold;  color: #136397;  padding-top: 3px; 
+ padding-left: 20px;	 }
+
+.search_text A:link, .search_text A:visited {color: #136397; text-decoration:underline; font-family: "돋움", "돋움체"; font-size: 11px;
+font-weight:bold; }
+.search_text A:hover,.search_text A:active  {color: #136397; text-decoration:none; font-family: "돋움", "돋움체"; font-size: 11px;
+font-weight:bold; }
+
+/* 서비스별 도움말 내용보기 text */
+.gu_list          { font-family: "굴림", "Gulim"; font-size: 12px;  padding-top: 10px;  padding-bottom: 6px;  padding-left: 10px;	 color: #444444; }
+
+.gu_text01  { font-family: "굴림", "Gulim"; font-size: 12px; color: #444444; }
+
+/* 이용안내 메일보내기 제목 text  */
+.gu_mail          {  font-family: "굴림", "Gulim";  font-size: 12px;  color:#147e52;  padding-left:10px;  padding-top:10px;  padding-bottom:6px;}
+
+/*서비스별 도움말 text link */
+선 있는 링크1 예) class=guide_In
+a.guide_In:        {color:#7F7F7F; text-decoration:none;}  a.guide_In:link    {color:#7F7F7F; text-decoration:none;}
+a.guide_In:visited {color:#7F7F7F; text-decoration:none;}  a.guide_In:hover   {color:#1f9866; text-decoration:underline;}
+
+/*서비스별 도움말 text link */
+선 있는 링크1 예) class=guide_In01
+a.guide_In01:        {color:#1f9866; text-decoration:underline;}  a.guide_In01:link    {color:#1f9866; text-decoration:none;}
+a.guide_In01:visited {color:#1f9866; text-decoration:underline;}  a.guide_In01:hover   {color:#1f9866; text-decoration:none;}
+
+/*서비스별 도움말 내용보기 text link */
+선 있는 링크1 예) class=guide_In02
+a.guide_In02:        {color:#f26522; text-decoration:underline;}  a.guide_In02:link    {color:#f26522; text-decoration:none;}
+a.guide_In02:visited {color:#f26522; text-decoration:underline;}  a.guide_In02:hover   {color:#f26522; text-decoration:none;}
+
+/*서비스별 도움말 검색결과 단어 text link */
+선 있는 링크1 예) class=guide_In03
+a.guide_In03:        {color:#1f9866; text-decoration:underline; font-weight:bold;} 
+a.guide_In03:link    {color:#1f9866; text-decoration:none; font-weight:bold;}
+a.guide_In03:visited {color:#1f9866; text-decoration:none; font-weight:bold;}  
+a.guide_In03:hover   {color:#1f9866; text-decoration:underline; font-weight:bold;}
+
+
+/*회원정보 부모동의 메일 text link */
+선 있는 링크1 예) class=guide_In04
+a.guide_In04:        {color:#006897; text-decoration:underline;}  a.guide_In04:link    {color:#006897; text-decoration:none;}
+a.guide_In04:visited {color:#006897; text-decoration:underline;}  a.guide_In04:hover   {color:#006897; text-decoration:none;}
+
+
+
+/*input box text css  */
+.text_input          {  padding-left:15px;   padding-top:7px;  padding-bottom:7px; }
+
+/* 서비스별 도움말 e-mail 문의하기 아이디 입력 폼 */
+.input_id            { font-family: "Arial", "굴림";  font-size: 11px;  height: 18px;  width: 150px; padding: 2px 0px 0px 3px;  
+border: 1px solid #cecece;	color: #666666;   text-decoration: none;	background-color: #FFFFFF;	margin: 0px;}
+
+/* 서비스별 도움말 e-mail 문의하기 성명 입력 폼 */
+.input_name            { font-family: "Arial", "굴림";  font-size: 11px;  height: 18px;  width: 150px; padding: 2px 0px 0px 3px;  
+border: 1px solid #cecece;	color: #666666;   text-decoration: none;	background-color: #FFFFFF;	margin: 0px;}
+
+/* 서비스별 도움말 e-mail 문의하기 이메일 입력 폼 */
+.input_mail            { font-family: "Arial", "굴림";  font-size: 11px;  height: 18px;  width: 200px; padding: 2px 0px 0px 3px;  
+border: 1px solid #cecece;	color: #666666;   text-decoration: none;	background-color: #FFFFFF;	margin: 0px;}
+
+/* 서비스별 도움말 e-mail 문의하기 제목 입력 폼 */
+.input_title            { font-family: "Arial", "굴림";  font-size: 11px;  height: 18px;  width: 420px; padding: 2px 0px 0px 3px;  
+border: 1px solid #cecece;	color: #666666;   text-decoration: none;	background-color: #FFFFFF;	margin: 0px;}
+
+.input_textarea         {  width: 420px; height: 120px; padding: 2px 0px 0px 3px; border: 1px solid #cecece;
+font-family: "Arial", "굴림"; font-size: 11px; color: #666666;	text-decoration: none;	background-color: #FFFFFF;	margin: 0px; }
+
+/* 회원정보 비밀번호  입력 폼 */
+.input_num          { font-family: "Arial", "굴림";  font-size: 11px;  height: 18px;  width: 150px; padding: 2px 0px 0px 3px;  
+border: 1px solid #cecece;	color: #666666;   text-decoration: none;	background-color: #FFFFFF;	margin: 0px;}
+
+/* 기본정책 green 강조 text */
+.gu_t       { font-family: "굴림", "Gulim";  color:#1f9866;  } 
+
+/* 기본정책 title text */
+.gu_tt      { font-family: "굴림", "Gulim";  color:#1f9866;  font-weight:bold;  padding-top:3px;  padding-bottom:3px;} 
+
+/* 기본정책 table text text */
+.gu_tb      { background-color: #f0f8f5;  font-family: "굴림", "Gulim";  font-size: 12px;  color:#147e52; text-align: center; 
+  padding-top:7px;  padding-bottom:5px;}
+
+/* 이용안내 table text */
+.gu_st    {font-family: "돋움", "돋움체"; font-size: 11px; color: #444444;   }
+ 
+/* 이용안내 table  설명 text 11px */
+.gu_join    { font-family: "굴림", "Gulim"; font-size: 12px; color: #444444;   padding-right:10px;  padding-top:10px; 
+ padding-bottom:6px;  text-align: right; }
+
+/* 이용안내 table text */
+.gu_id      {font-family: "굴림", "Gulim"; font-size: 12px; color: #444444;  padding-left:5px;  padding-top:3px;  padding-bottom:3px; 
+font-weight:bold;}
+
+/* 이용안내 회원가입 title text 12px */
+.gu_join_t    { font-family: "굴림", "Gulim"; font-size: 13px; color: #444444;  padding-top:5px;  padding-bottom:4px;  
+ font-weight:bold;}
+
+
+/* 이용안내 회원가입 이용약관 textarea  */
+textarea { font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 11px; color: #707070; line-height: 16px;
+border: 1px solid #fbfbfb; padding: 10px; background-color: #fbfbfb;}
+
+
+
+/* 사이트맵  text text */
+.gu_map            { font-family: "굴림", "Gulim"; font-size: 12px;  padding-top: 8px;  padding-bottom: 4px;  padding-left: 14px;	 color: #545454; }
+
+/* 사이트맵  민원서비스 text link */
+선 없는 링크1 예) class=gu_map01
+a.gu_map01:        {color:#545454; text-decoration:none; } a.gu_map01:link    {color:#0067aa; text-decoration:none; }
+a.gu_map01:visited {color:#545454; text-decoration:none; } a.gu_map01:hover   {color:#0067aa; text-decoration:none; }
+
+/* 사이트맵  연안업무소개 text link */
+선 없는 링크1 예) class=gu_map02
+a.gu_map02:        {color:#545454; text-decoration:none; } a.gu_map02:link    {color:#375496; text-decoration:none; }
+a.gu_map02:visited {color:#545454; text-decoration:none; } a.gu_map02:hover   {color:#375496; text-decoration:none; }
+
+/* 사이트맵  연안통계 text link */
+선 없는 링크1 예) class=gu_map03
+a.gu_map03:        {color:#545454; text-decoration:none; } a.gu_map03:link    {color:#33958f; text-decoration:none; }
+a.gu_map03:visited {color:#545454; text-decoration:none; } a.gu_map03:hover   {color:#33958f; text-decoration:none; }
+
+/* 사이트맵  연안정책 text link */
+선 없는 링크1 예) class=gu_map04
+a.gu_map04:        {color:#545454; text-decoration:none; } a.gu_map04:link    {color:#538dbb; text-decoration:none; }
+a.gu_map04:visited {color:#545454; text-decoration:none; } a.gu_map04:hover   {color:#538dbb; text-decoration:none; }
+
+/* 사이트맵  연안과생활 text link */
+선 없는 링크1 예) class=gu_map05
+a.gu_map05:        {color:#545454; text-decoration:none; } a.gu_map05:link    {color:#6360a8; text-decoration:none; }
+a.gu_map05:visited {color:#545454; text-decoration:none; } a.gu_map05:hover   {color:#6360a8; text-decoration:none; }
+
+/* 사이트맵  webgis text link */
+선 없는 링크1 예) class=gu_map06
+a.gu_map06:        {color:#545454; text-decoration:none; } a.gu_map06:link    {color:#26a26f; text-decoration:none; }
+a.gu_map06:visited {color:#545454; text-decoration:none; } a.gu_map06:hover   {color:#26a26f; text-decoration:none; }
+
+  
+/*통합검색 인기검색어 검색결과 단어 text link */
+선 있는 링크1 예) class=ser_In01
+a.ser_In01:        {color:#545454; text-decoration:none;} 
+a.ser_In01:link    {color:#0067aa; text-decoration:underline; }
+a.ser_In01:visited {color:#545454; text-decoration:none;}  
+a.ser_In01:hover   {color:#0067aa; text-decoration:underline; }
+
+/*통합검색 인기검색어 검색결과 단어 text link*/
+선 있는 링크1 예) class=ser_In02
+a.ser_In02:        {color:#0067aa; text-decoration:underline; } 
+a.ser_In02:link    {color:#0067aa; text-decoration:underline; }
+a.ser_In02:visited {color:#0067aa; text-decoration:underline; }  
+a.ser_In02:hover   {color:#0067aa; text-decoration:none; }
+
+/*통합검색 인기검색어 검색결과 단어 text link*/
+선 있는 링크1 예) class=ser_In03
+a.ser_In03:        {color:#0067aa; text-decoration:underline; font-weight:bold;} 
+a.ser_In03:link    {color:#0067aa; text-decoration:none; font-weight:bold;}
+a.ser_In03:visited {color:#0067aa; text-decoration:none; font-weight:bold;}  
+a.ser_In03:hover   {color:#0067aa; text-decoration:underline; font-weight:bold;}
+
+
+/*========= 연안정책 ==========*/
+/* 연안정책 권역별 정책방향 text가나다*/
+.pol_text04   { font-family: "굴림", "Gulim"; font-size: 12px;  padding-left: 20px;  padding-top: 5px;  padding-bottom: 3px;  color:#3c6795; }
+
+/* 연안정책 권역별 정책방향 text123*/
+.pol_text03   { font-family: "굴림", "Gulim"; font-size: 12px;  padding-left: 15px;  padding-top: 10px;  padding-bottom: 5px;  color:#EC7C03;   font-weight:bold;}
+
+/* 연안정책 메인 관리업무등 text text link*/
+.pol_text01   { font-family: "굴림", "Gulim"; font-size: 12px;  padding-top: 5px;  padding-bottom: 4px;  color: #4974a2; }
+
+/* 연안정책 메인 관리업무등 부연설명 text*/
+.pol_text     { font-family: "돋움", "돋움체";  font-size: 11px; padding-left:5px;  color: #545454; }
+
+/*연안정책 선없는 text link */
+선 있는 링크1 예) class=pol_In01
+a.pol_In01:        { text-decoration:none;} 
+a.pol_In01:link    {color:#3c6795; text-decoration:underline; }
+a.pol_In01:visited { text-decoration:none;}  
+a.pol_In01:hover   {color:#3c6795; text-decoration:underline; }
+
+/*연안정책 선있는 text link */
+선 있는 링크1 예) class=pol_In02
+a.pol_In02:        {color:#3c6795; text-decoration:underline; } 
+a.pol_In02:link    {color:#3c6795; text-decoration:underline; }
+a.pol_In02:visited {color:#3c6795; text-decoration:underline; }  
+a.pol_In02:hover   {color:#3c6795; text-decoration:none; }
+
+
+/*연안정책 선있는 text link */
+선 있는 링크1 예) class=pol_In03
+a.pol_In03:        {color:#3c6795; text-decoration:underline; font-weight:bold;} 
+a.pol_In03:link    {color:#3c6795; text-decoration:underline; font-weight:bold;}
+a.pol_In03:visited {color:#3c6795; text-decoration:underline; font-weight:bold;}  
+a.pol_In03:hover   {color:#3c6795; text-decoration:none; font-weight:bold;}
+
+
+
+
+/* 연안업무 메뉴 title text */
+.pol_stt      { font-family: "굴림", "Gulim";  color:#3c6795;  font-weight:bold;  padding-top:3px;  padding-bottom:3px;} 
+
+/* 연안관리업무 큰 title text */
+.pol_tt       { font-family: "굴림", "Gulim";  font-size: 13px; color:#3c6795;  font-weight:bold;  padding-top:3px;  padding-bottom:3px;} 
+
+/* 연안관리업무 작은 title text */
+.pol_t        { font-family: "굴림", "Gulim";   font-size: 12px; color:#3c6795;  font-weight:bold;  padding-top:3px;  padding-bottom:3px;
+ padding-left:10px;} 
+
+/* 연안관리업무  title text */
+.pol_st01     { font-family: "굴림", "Gulim";  font-size: 12px; color:#444444;   font-weight:bold;   padding-top:3px;
+ padding-bottom:3px; padding-left:20px; } 
+ 
+ /* 연안관리업무  title text */
+.pol_st02     { font-family: "굴림", "Gulim";  font-size: 12px;  color:#545454; padding-top:3px;  padding-bottom:3px;
+ padding-left:20px;  text-align:justify;} 
+ 
+ 
+  /* 연안관리업무 권역별 title text */
+.pol_st03     { font-family: "굴림", "Gulim";  font-size: 12px;  color:#545454; padding-top:4px;  padding-bottom:3px;
+ padding-left:15px;  text-align:justify;} 
+ 
+  /* 연안관리업무 권역별 title text */
+.pol_st04     { font-family: "굴림", "Gulim";  font-size: 12px;  color:#545454; padding-top:4px;  padding-bottom:3px;
+ padding-left:15px;  text-align:justify;  font-weight:bold;} 
+
+
+ /* 연안관리업무  text */
+.pol_txt01    { font-family: "굴림", "Gulim";  font-size: 12px;  padding-left:20px; text-align:justify; } 
+
+ /* 연안관리업무  text */
+.pol_txt02    { font-family: "굴림", "Gulim";  font-size: 12px;  padding-left:35px; text-align:justify; } 
+
+
+
+
+
+
+
+
+/* 연안업무소개 */
+
+선없는 링크1 예) class=ln
+a.ln:{color:#7F7F7F; text-decoration:none;}
+a.ln:link {color:#7F7F7F;  text-decoration: none;}
+a.ln:visited {color:#7F7F7F; text-decoration: none;}
+a.ln:hover{color:#018a96; text-decoration : none;}
+
+선없는 링크2 예) class=la
+a.la:{color:#3355b6; text-decoration:none;}
+a.la:link {color:#3355b6;  text-decoration: none;}
+a.la:visited {color:#3355b6; text-decoration: none;}
+a.la:hover{color:#d46d28; text-decoration : none;}
+
+
+선없는 링크3 예) class=lb
+a.lb:{color:#7F7F7F; text-decoration:none;}
+a.lb:link {color:#7F7F7F;  text-decoration: none;}
+a.lb:visited {color:#7F7F7F; text-decoration: none;}
+a.lb:hover{color:#d46d28; text-decoration : none;}
+
+
+/* 연안업무소개 red 텍스트 강조*/
+.coast_text_red     { font-family: "굴림", "Gulim"; font-size: 12px;  line-height: 16px;  color: #e84620; }
+
+/* 연안업무소개 blue 텍스트 강조*/
+.coast_text_blue     { font-family: "굴림", "Gulim"; font-size: 12px;  line-height: 18px;  color: #025bd3; }
+
+/* 검색 폼 */
+.input_search_a    { font-family: "Arial", "굴림";  font-size: 11px;  height: 18px;  padding: 2px 0px 0px 3px;  border: 1px solid #cecece;	
+color: #666666;   text-decoration: none;	background-color: #FFFFFF;	margin: 0px;}
+
+/* 선택 폼 */
+.input_select_a    { font-family: "Arial", "굴림";  font-size: 11px;  height: 18px;	padding: 2px 0px 0px 3px;	border: 1px solid #cecece;		
+color: #666666;	  text-decoration: none;	background-color: #FFFFFF;	margin: 0px;}
+
+/* 입력 폼 */
+.input_a    { font-family: "Arial", "굴림";  font-size: 11px;  padding: 2px 0px 0px 3px;	border: 1px solid #cecece;		
+color: #666666;	  text-decoration: none;	background-color: #FFFFFF;	margin: 0px;}
+
+
+
+/* 연안과생활 */
+
+/*연안과생활 게시판 list title top  */
+.living_title        { background-color: #eae5f6;  font-family: "굴림", "Gulim" ; font-size: 12px;  color:#3c00aa;  text-align: center; 
+padding-top:8px; padding-bottom:4px;}
+
+/*연안과생활 게시판 list text  */
+.living_text          { font-family: "굴림", "Gulim" ;  font-size: 12px;  color:#545454;  padding-left:5px;  padding-right:5px; 
+padding-top:8px;  padding-bottom:4px; }
+
+/*연안과생활 게시판 list text link*/
+.living_text A:link,  .ser_text  A:visited { color: #444444; text-decoration:none;     font-family: "굴림", "Gulim"; font-size: 12px; }
+.living_text A:hover, .ser_text  A:active  { color: #3800aa; text-decoration:none; font-family: "굴림", "Gulim"; font-size: 12px; }
+
+/*연안과생활 게시판 내용보기 title top  */
+.living_title02        { background-color: #eae5f6;  font-family: "굴림", "Gulim" ; font-size: 12px;  color:#3c00aa;    padding-left:10px; 
+padding-top:8px; padding-bottom:4px;}
+
+/*연안과생활 게시판 내용보기 text  */
+.living_text02          { font-family: "굴림", "Gulim" ;  font-size: 12px;  color:#545454;  padding-left:5px;  padding-right:5px; 
+padding-top:8px;  padding-bottom:4px; }
+
+/*연안과생활 게시판 내용보기 text link*/
+.living_text02 A:link,  .ser_text  A:visited { color: #444444; text-decoration:none;     font-family: "굴림", "Gulim"; font-size: 12px; }
+.living_text02 A:hover, .ser_text  A:active  { color: #3800aa; text-decoration:underline; font-family: "굴림", "Gulim"; font-size: 12px; }
+
+/*연안과생활 메인 게시판 링크*/
+.living_bor01          { font-family: "굴림", "Gulim" ;  font-size: 12px;  color:#6360a8;  padding-left:3px;  padding-right:3px;  }
+.living_bor01 A:link,  .ser_text  A:visited { color: #444444; text-decoration:none;     font-family: "굴림", "Gulim"; font-size: 12px; }
+.living_bor01 A:hover, .ser_text  A:active  { color: #3800aa; text-decoration:underline; font-family: "굴림", "Gulim"; font-size: 12px; }
+
+
+/*연안과생활 게시판 댓글 text  */
+.living_text_re         { font-family: "굴림", "Gulim" ;  font-size: 12px;  color:#424242;}
+
+
+/*연안과생활 게시판 텍스트 */
+.living_text01       { font-family:  "굴림", "Gulim"; font-size: 12px;  color:#666666;  padding-left:5px;    padding-top:8px;
+padding-bottom: 3px;}
+.living_text01_c     { font-family:  "굴림", "Gulim"; font-size: 12px;  color:#666666;  text-align: center;  padding-top:8px; 
+padding-bottom: 3px;}
+
+
+/* 연안과생활 violet 텍스트 강조 */
+.living_text_v     { font-family: "굴림", "Gulim"; font-size: 12px;  line-height: 18px;  color: #5b02d3; }
+
+/* 연안과생활 작은 텍스트 */
+.living_text_s     { font-family: "굴림", "Gulim"; font-size: 11px;  line-height: 15px;  color: #ffffff; }
+
+
+
+/* ---연안통계--- */
+
+/* graph select box style */
+.select    	{border:solid 1; font-family:굴림,Tahoma,Verdana; font-size:9pt; cursor : text; color:77819a;  background-color:white; width:130px; height:19px; border-color:#bdcddc;}
+
+/* 통계 표 텍스트 강조 */
+.stat_table     { font-family: "굴림", "Gulim"; font-size: 12px;  color: #33958f; font-weight: bold;}
+
+/* 연안법률 */
+
+선없는 링크3 예) class=lo
+a.lo:{color:#7F7F7F; text-decoration:none;}
+a.lo:link {color:#7F7F7F;  text-decoration: none;}
+a.lo:visited {color:#7F7F7F; text-decoration: none;}
+a.lo:hover{color:#F66E13; text-decoration : none;}
+
+선없는 링크4 예) class=lp
+a.lp:{color:#7F7F7F; text-decoration:none;}
+a.lp:link {color:#7F7F7F;  text-decoration: none;}
+a.lp:visited {color:#7F7F7F; text-decoration: none;}
+a.lp:hover{color:#7235FB; text-decoration : none;}
+
+선없는 링크5 예) class=lq
+a.lq:{color:#7F7F7F; text-decoration:none;}
+a.lq:link {color:#7F7F7F;  text-decoration: none;}
+a.lq:visited {color:#7F7F7F; text-decoration: none;}
+a.lq:hover{color:#0487CB; text-decoration : none;}
+
+
+
+/* ------------ webgis -------------*/
+
+/* 기본 텍스트 */
+.gis_1     { font-family: "굴림", "Gulim"; font-size: 12px;  line-height: 15px;  color: #5178ae;}
+.gis_2     { font-family: "굴림", "Gulim"; font-size: 12px;  line-height: 15px;  color: #313f48; }
+.gis_3		{ font-family: "굴림", "Gulim"; font-size: 12px;  line-height: 15px;  color: #4c4c4c;}
+.gis_4		{ font-family: "돋움", "돋움체"; font-size: 11px;  line-height: 15px;  color: #4c4c4c;}
+
+/* 검색결과 */
+.gis_searchn	{ font-family: "Tahoma", "굴림"; font-size: 10px;  line-height: 15px;  color: #7f7f7f; font-weight: bold;}
+.gis_searcht		{font-family: "굴림", "Gulim"; font-size: 12px; line-height: 18px; color: #4c4c4c;}
+
+/* 콤보박스, 박스  */
+.gis_s1 	{border:solid 1; font-family:굴림,Tahoma,Verdana; font-size:9pt; cursor : text; color:5178ae;  background-color:white; width:110px; height:21px; border-color:#7F9DB9;}
+.gis_s2 	{border:solid 1; font-family:굴림,Tahoma,Verdana; font-size:9pt; cursor : text; color:5178ae;  background-color:white; width:80px; height:19px; border-color:#7F9DB9;}
+.scale 	 	{border:solid 1; font-family:굴림,Tahoma,Verdana; font-size:8pt; cursor : text; color:5178ae;  background-color:white; width:57px; height:16px; border-color:#6ebaeb;}
+
+.gis_r1 	{border:solid 1; font-family:굴림,Tahoma,Verdana; font-size:9pt; cursor : text; color:5178ae;  background-color:white; width:150px; height:21px; border-color:#7F9DB9;}
+
+
+
+/* ------------ 설문조사 -------------*/
+
+/* 설문조사 제목  */
+.question			{font-family: "굴림", "굴림체"; font-size: 14px; line-height: 16px; color: #385ba1; font-weight:bold; text-decoration:none;}
+
+/* 설문조사 제목  */
+.thanks			{font-family: "굴림", "굴림체"; font-size: 12px; line-height: 16px; color: #9d0a0e;  text-decoration:none;}
+
+
+.btn_close	{cursor:pointer;}

@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+
+<script language="javascript">
+sunsu = new Array()
+temp = 1
+imgsource1 = new Array("1.gif", "2.gif", "3.gif", "4.gif", "5.gif", "6.gif", "7.gif", "8.gif",
+	                  "9.gif", "10.gif", "11.gif", "12.gif", "13.gif", "14.gif", "15.gif","blink.gif")
+blink = 0
+
+function pro()
+{
+	pro2()
+	pro3()
+}
+
+function pro3()
+{
+	for(i=0; i<16; i++)
+	{
+		document.images[i].src = imgsource1[sunsu[i]]
+		if (sunsu[i]==15) blink = i
+	} 
+}
+
+function pro2()
+{
+	for (i = 0 ; i<16 ; i++ )
+	{
+		while(true)
+		{	
+			num = Math.round(Math.random()*15)
+			for (j=0 ; j<i ; j++)
+			{
+				if (sunsu[j] == num) temp = 0 
+				
+			} 
+			if (temp == 1)	
+			{
+				sunsu[i] = num
+				break
+			}
+			temp = 1
+		}
+	}
+}
+
+function pro4(k)
+{
+	gap = Math.abs(blink - k)
+	if (gap == 1 || gap == 4)
+	{
+		temp1 = sunsu[k]
+		sunsu[k] = sunsu[blink]
+		sunsu[blink] = temp1
+		pro3()
+	}
+	pro5()
+}
+
+function pro5()
+{
+	for(i=0 ; i <16 ; i++)
+		if (i != sunsu[i])	return
+	alert("¬ß¬•∂Û.. ¥Ÿ ∏¬√Ë≥◊.. §∫§ª§∫§ª")
+}
+</script>
+</head>
+
+<body>
+<font  size=7  color=green> <b> ∆€¡Ò∞‘¿” </b></font><br>
+<form>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type = "button" value = "Ω√&nbsp;&nbsp;¿€" onClick = "pro()"   style="font-size:24pt; font-style:bold; " > <p>
+</form>
+<script language="javascript">
+imgsource = new Array("1.gif", "2.gif", "3.gif", "4.gif", "5.gif", "6.gif", "7.gif", "8.gif",
+	                  "9.gif", "10.gif", "11.gif", "12.gif", "13.gif", "14.gif", "15.gif", "16.gif")
+for (i =0 ; i<16 ; i++)
+{
+	document.write("<img src=" + imgsource[i] + " border = 1 onClick = 'pro4(" + i + ")'>")
+	if (((i+1)%4)==0) document.write("<br>") 
+}
+</script>
+
+</body>
+</html>
+

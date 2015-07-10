@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>[rain03.html]</title>
+	<style type="text/css">
+		button,b,input{font-size:20pt; font-weight:bold; }
+		div{font-size:26pt; font-weight:bold;  height:100px; background-color:#FF0000; }  
+		  
+	</style>
+
+	<!-- 세개 중에 아무거나 사용하기 -->
+	<script src="data/js/jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	
+	<script type="text/javascript">
+	
+		$(function(){ 
+		$('#show').click(function(){
+			$('img').show(fadein,function(){
+				alert('지금 상태는 '+$(this).css("display")+" 입니다.");
+			});
+		})
+	
+		$('#hide').click(function(){
+			$('img').fadeout(5000,function(){
+				alert("지금 상태는 "+$(this).css("display")+" 입니다.");
+			});
+		})
+		})
+	</script>
+
+</head>
+<body>
+	<img src="images/sample1.jpg" alt="sample1.jpg" width=300 height=200><br>
+	<button id="hide"> hide()</button>
+	<button id="show"> show()</button>
+
+	<p><br>
+	<img src="images/bar.gif" width=900 height=50>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

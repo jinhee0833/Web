@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>계산기.html</title>
+  <style type="text/css">
+	.txt {  text-align: right; font-weight:bold; font-size:15px; }
+  </style>
+  <script type="text/javascript">
+   function input(su) {
+	  document.calcfrm.result.value=Number(document.calcfrm.result.value+su);
+	  //document.calcfrm.result.value=eval(document.calcfrm.result.value+su);
+   }
+   
+   
+   
+   function cls() {
+	  document.calcfrm.result.value=0;
+   }
+   
+   
+   
+   var num1,num2; //전역변수
+   var op;
+   
+   function calc() {
+	   num2=Number(document.calcfrm.result.value);
+	   var res=0;
+		switch(op) {
+		case '+': res=num1+num2; break;
+		case '-': res=num1-num2; break;
+		case '*': res=num1*num2; break;
+		case '/': res=num1/num2; break;
+		}
+		document.calcfrm.result.value=res; //결과 출력
+   }
+   
+   
+   function operator(ch) { // + - / *
+		op=ch;
+		num1=Number(document.calcfrm.result.value); //앞의 수
+		cls(); //앞의 수 초기화
+   }
+  </script>
+ </head>
+ <body>
+  <form name="calcfrm">
+  <table border="1">
+  <tr>
+	<td colspan="4">
+	   <input type="text" name="result" value="0"
+	             size="22" class="txt" readonly>
+	</td>
+  </tr>
+  <tr>
+	<td><input type="button" value="  7  " onclick="input(7)"></td>
+	<td><input type="button" value="  8  " onclick="input(8)"></td>
+	<td><input type="button" value="  9  " onclick="input(9)"></td>
+	<td><input type="button" value="  /  " onclick="operator('/')"></td>
+  </tr>
+  <tr>
+	<td><input type="button" value="  4  " onclick="input(4)"></td>
+	<td><input type="button" value="  5  " onclick="input(5)"></td>
+	<td><input type="button" value="  6  " onclick="input(6)"></td>
+	<td><input type="button" value="  *  " onclick="operator('*')"></td>
+  </tr>
+  <tr>
+	<td><input type="button" value="  1  " onclick="input(1)"></td>
+	<td><input type="button" value="  2  " onclick="input(2)"></td>
+	<td><input type="button" value="  3  " onclick="input(3)"></td>
+	<td><input type="button" value="  -  " onclick="operator('-')"></td>
+  </tr>
+  <tr>
+	<td><input type="button" value="  0  " onclick="input(0)"></td>
+	<td><input type="button" value="  C  " onclick="cls()"></td>
+	<td><input type="button" value="  =  " onclick="calc()"></td>
+	<td><input type="button" value="  +  " onclick="operator('+')"></td>
+  </tr>
+  </table>
+  </form>
+ </body>
+</html>

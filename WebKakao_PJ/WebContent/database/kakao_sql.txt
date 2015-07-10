@@ -1,0 +1,104 @@
+
+drop table kakao_user;
+
+create table kakao_user(
+   user_id varchar2(20) not null,
+   user_pw varchar2(10) not null,
+   user_name varchar2(20) not null,
+   primary key(user_id)
+);
+
+
+drop table kakao_board;
+
+create table kakao_board(   		  
+  brd_idx number(4) not null primary key,  
+  brd_num number(4) not null, 		  
+  brd_id varchar2(20) not null, 		  
+  brd_name varchar2(16) not null, 	  
+  brd_content varchar2(500) not null, 	  
+  brd_date date, 			  
+  brd_file varchar2(50), 		  
+  brd_rcmd number(4), 		  
+  brd_public varchar2(10),  		  
+  brd_ref number(5), 		  
+  brd_lev number(5), 			  
+  brd_seq number(5) 			  
+);
+
+
+drop sequence kakao_seq;
+
+
+create sequence kakao_seq; 
+
+
+drop table kakao_comment;
+
+
+create table kakao_comment(
+  comment_idx number not null, 
+  comment_boardnum number not null,
+  comment_id varchar2(20) not null,        		   
+  comment_content varchar2(1000) not null,    
+  comment_date date not null,     		     
+  comment_RE_REF number not null, 		   
+  comment_RE_LEV number, 			     
+  comment_RE_SEQ number, 			    
+  comment_rename varchar2(20),
+  primary key(comment_idx)
+);
+
+
+drop sequence kakao_comment_seq;
+
+
+create sequence kakao_comment_seq;
+
+
+drop table kakao_guest;
+
+create table kakao_guest (
+  g_idx number(20) not null primary key,
+  g_date date not null,
+  g_name varchar2(16) not null,
+  g_userId varchar2(20) not null,
+  g_content varchar2(1000) not null,
+  g_public varchar2(10),
+  g_ref number(5),
+  g_lev number(5),
+  g_seq number(5)
+);
+
+drop sequence guestbook_seq;
+
+create sequence guestbook_seq increment by 1 start with 1  
+nocycle;   
+
+
+drop table kakao_memo;
+
+create table kakao_memo(
+  memo_user_id varchar2(20) not null primary key,
+  memo_content varchar2(4000)
+);
+
+
+drop table kakao_message;
+
+create table kakao_message(
+  msg_idx number not null,
+  msg_sendID varchar2(20) not null,
+  msg_receiveID varchar2(20) not null,
+  msg_content varchar2(4000) not null,
+  msg_check varchar2(2) not null,
+  msg_senddate date not null,
+  msg_receivedate date not null,
+  primary key(msg_idx)
+);
+
+drop sequence kakao_message_seq;
+
+create sequence kakao_message_seq;
+
+commit;

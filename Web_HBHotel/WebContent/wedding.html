@@ -1,0 +1,71 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+
+.thumbs {  
+   float:top;
+   padding-top:130px;
+   margin-top:0px;
+   margin-left:500px;
+}
+.thumbs img {
+	float:top;
+	padding-right:3px;	
+	margin-bottom:3px;
+}
+.thumbs img:hover {
+	border-color: #FF0000 ;
+	border: solid 3px #FF0000;
+}
+
+#largeImg {
+	border: solid 1px #ccc;
+	width: 767px;
+	height: 447px;
+	padding: 5px;
+    margin-left:500px;
+}
+</style>
+
+	<script  src="js/jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="data/js/jquery-2.0.3.min.js"> </script>
+	<script src="data/js/jquery-2.0.3.js"> </script>
+	<script src="data/js/jquery-1.7.2.min.js"></script>
+	<script src="data/js/jquery-ui-1.8.23.custom.min.js"></script>
+
+</head>
+
+<body>
+    <div class="thumbs">
+        <a href="images/w1.jpg" title="image1"><img src="images/w11.jpg" /></a>
+        <a href="images/w2.jpg" title="image2"><img src="images/w22.jpg" /></a>
+        <a href="images/w3.jpg" title="image3"><img src="images/w33.jpg" /></a>
+        <a href="images/w4.jpg" title="image3"><img src="images/w44.jpg" /></a>
+        <a href="images/w5.jpg" title="image3"><img src="images/w55.jpg" /></a>
+        <a href="images/w6.jpg" title="image3"><img src="images/w66.jpg" /></a>
+  	  	<a href="images/w7.jpg" title="image3"><img src="images/w77.jpg" /></a>
+  	  	<a href="images/w8.jpg" title="image3"><img src="images/w88.jpg" /></a>
+    </div>
+    <div id="largeImg"><img src="images/w1.jpg" alt="image1" /></div>
+
+<!---------- jQuery code Start ---------->
+<script>
+	$(".thumbs a").click(function(){	
+		var path = $(this).attr("href");
+		$("#largeImg > img").attr({ src: path });
+		//effecr 추가
+		$("#largeImg > img").css("opacity","0.5").stop().animate({opacity:1},2000);
+		
+		//console.log( path );
+		return false;
+	});
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> [hb30.html]  </title>
+<style type="text/css">
+
+.thumbs {  
+   float:top;
+   padding-top:130px;
+   margin-top:0px;
+   margin-left:500px;
+}
+.thumbs img {
+	float:top;
+	padding-right:3px;	
+	margin-bottom:3px;
+}
+.thumbs img:hover {
+	border-color: #FF0000 ;
+	border: solid 3px #FF0000;
+}
+
+#largeImg {
+	border: solid 1px #ccc;
+	width: 767px;
+	height: 447px;
+	padding: 5px;
+    margin-left:500px;
+}
+</style>
+
+	<script  src="js/jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="data/js/jquery-2.0.3.min.js"> </script>
+	<script src="data/js/jquery-2.0.3.js"> </script>
+	<script src="data/js/jquery-1.7.2.min.js"></script>
+	<script src="data/js/jquery-ui-1.8.23.custom.min.js"></script>
+
+</head>
+
+<body>
+    <div class="thumbs">
+        <a href="images/chall_photo1.jpg" title="image1"><img src="images/photo1.jpg" /></a>
+        <a href="images/chall_photo2.jpg" title="image2"><img src="images/photo2.jpg" /></a>
+        <a href="images/meetings1_1_3.jpg" title="image3"><img src="images/meetings3.jpg" /></a>
+        <a href="images/meetings2_1_2.jpg" title="image3"><img src="images/meetings2.jpg" /></a>
+        <a href="images/meetings3_1_2.jpg" title="image3"><img src="images/meetings32.jpg" /></a>
+        <a href="images/meetroom1.jpg" title="image3"><img src="images/meet12.jpg" /></a>
+  	  	<a href="images/1.jpg" title="image3"><img src="images/2.jpg" /></a>
+  	  	<a href="images/5.jpg" title="image3"><img src="images/99.jpg" /></a>
+    </div>
+    <div id="largeImg"><img src="images/chall_photo1.jpg" alt="image1" /></div>
+
+<!---------- jQuery code Start ---------->
+<script>
+	$(".thumbs a").click(function(){	
+		var path = $(this).attr("href");
+		$("#largeImg > img").attr({ src: path });
+		//effecr 추가
+		$("#largeImg > img").css("opacity","0.5").stop().animate({opacity:1},2000);
+		
+		//console.log( path );
+		return false;
+	});
+</script>
+
+</body>
+</html>
+

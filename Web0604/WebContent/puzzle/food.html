@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+
+
+<script language = "javascript">
+function pro()
+{
+	sul1 = document.input.sul.value
+	num1 = document.input.su1.value
+	an = document.input.anju.value
+	num2 = document.input.su2.value
+
+	gap1 = 0
+	gap2 = 0
+	switch (sul1)
+	{
+	case "¼ÒÁÖ" : gap1 = 3000; break;
+	case "¸ÆÁÖ" : gap1 = 2000; break;
+	case "Äİ¶ó" : gap1 = 5000;  break;
+	}
+	switch (an)
+	{
+	case "Á¦À°ººÀ½" : gap2 = 8000; break;
+	case "µÎºÎ±èÄ¡" : gap2 = 10000; break;
+	case "°ñ¹ğ¹«Ä§" : gap2 = 7000; break;
+	case "±èÄ¡ÆÄÀü" : gap2 = 5000; break;
+	}
+	sulsum = gap1 * num1
+	ansum = gap2 * num2
+	total = sulsum + ansum
+	
+	data = "¾ÈÁÖ: " + an + " \t\t°¹¼ö:" + num2 + " \tÇÕ°è:" + ansum + "¿ø" + "\n"
+		   + "À½·á: " + sul1 + " \t\t°¹¼ö:" + num1 + " \tÇÕ°è:" +sulsum + "¿ø" + "\n" 
+		   + "ÃÑ °è: " + total + "¿ø"
+
+
+	document.input.result.value = data
+
+}	
+</script>
+</head>
+
+<body >
+<h1><font color=green>&nbsp;&nbsp;&nbsp;&nbsp; [ÂÉ³¢ÂÉ³¢ ÁÖ¹®Ç¥] </font></h1>
+<form name = "input">
+<table border = 0>
+<tr> 
+	<td width = 80><b>¼úÁ¾·ù<b></td>
+	<td width = 50><b>°¹¼ö </b></td>
+	<td width = 80><b>¾ÈÁÖÁ¾·ù</b></td>
+	<td width = 50><b>°¹¼ö<b></td>
+</tr>
+<tr><td width = 80>
+<select name = "sul" >
+<option value = "¼ÒÁÖ"> ¼ÒÁÖ(3000¿ø)
+<option value = "¸ÆÁÖ"> ¸ÆÁÖ(2000¿ø)
+<option value = "Äİ¶ó"> Äİ¶ó(5000¿ø)
+</td>
+<td width = 50>
+<input type = "text" name = "su1" value = " ">
+</td>
+<td width = 80>
+<select name = "anju" >
+<option value = "Á¦À°ººÀ½"> Á¦À°ººÀ½(8000¿ø)
+<option value = "µÎºÎ±èÄ¡"> µÎºÎ±èÄ¡(10000¿ø)
+<option value = "°ñ¹ğ¹«Ä§"> °ñ¹ğ¹«Ä§(7000¿ø)
+<option value = "±èÄ¡ÆÄÀü"> ±èÄ¡ÆÄÀü(5000¿ø)
+</td>
+<td width = 50>
+<input type = "text" name = "su2" value = " ">
+</td></tr>
+</table>
+<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type = "button" value = " &nbsp;ÁÖ&nbsp; ¹®&nbsp; È®&nbsp; ÀÎ&nbsp;"  onClick = "pro()"  style="font-size:22pt"> <p>
+
+ <textarea name = "result" rows = 10 cols = 80 style="font-size:12pt ; background-color:pink ; font-family:±Ã¼­Ã¼"> 
+</textarea>
+</form>
+</body>
+
+</html>
+

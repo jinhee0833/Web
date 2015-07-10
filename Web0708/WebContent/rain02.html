@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>[rain02.html]</title>
+	<style type="text/css">
+		b,input{font-size:20pt; font-weight:bold; }
+		div{font-size:26pt; font-weight:bold;  height:100px; background-color:#FF0000; }  
+		  
+	</style>
+
+	<!-- 세개 중에 아무거나 사용하기 -->
+	<script src="data/js/jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	
+	<script type="text/javascript">
+		$(function(){
+			$("#bc").click(function(){
+				$(this).text("bc Card 4:20");
+				$(this).css("background-color","lightgreen");
+				
+			});
+			
+		})
+	
+		$(function( ){ 
+			$("div#kb").click( function(){ 
+				$(this).text("Rain 11:49  11:52 11:56");
+				$(this).css('background-color','#000099');
+				$(this).css('color','#00FF00')
+				$(this).css("font-size","50pt")
+				
+			});
+		})
+		
+		$( function( ){
+			$("#ibk").click(function( ){ 
+				$(this).text("Coffee 2:20");
+				$(this).css("background-color","pink");
+				$(this).css('color','#BCE55C')
+			});
+		})
+		
+	</script>
+
+</head>
+<body>
+	<div id="bc">div태그 bc</div><p>
+	<div id="kb">div태그 kb</div><p>
+	<div id="ibk">div태그 ibk</div>
+	
+	<p><br>
+	<img src="images/bar.gif" width=900 height=50>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
