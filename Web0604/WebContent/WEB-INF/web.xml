@@ -58,4 +58,12 @@
     <servlet-name>login</servlet-name>
     <url-pattern>/login.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>upload</servlet-name>
+    <servlet-class>net.hb.mvc.MultiUploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>upload</servlet-name>
+    <url-pattern>/upload2.do</url-pattern>
+  </servlet-mapping>
 </web-app>

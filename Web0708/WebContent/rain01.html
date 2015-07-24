@@ -10,21 +10,24 @@
 
 	<!-- 세개 중에 아무거나 사용하기 -->
 	<script src="data/js/jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.5.js"></script>
 	
 	<script type="text/javascript">
 		$(function( ){ 
-			$("div").click( function(){ 
-				$(this).text("Rain 11:49  11:52 11:56");
+			$("#a").keyup( function(){ 
+				var value = $("#a").val().toUpperCase();
+				
+				$(this).val(value);
 			});
-		})
+		}).keyup();
 	</script>
 
 </head>
 <body>
 	<div>div태그 test</div>
-	
-	<p><br>
-	<img src="images/bar.gif" width=900 height=50>
+	<input type="text" value="a" id="a">
+	<input type="text" value="6789" id="b" name="bb">
+	<p></p>
 </body>
 </html>
 

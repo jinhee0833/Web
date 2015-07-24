@@ -1,0 +1,62 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	
+	<!-- naver-servlet.xml문서  -->
+
+	<bean id="handlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+	
+	<bean name="/write.do"  class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="write"/>
+	</bean>	
+	
+   <bean name="/insert.do" class="net.hb.controller.InsertController">
+   		<property name="commandClass"  value="net.hb.dto.GuestDTO"/>
+   		<property name="dao" ref="dao" />
+   </bean>
+
+   <bean name="/list.do" class="net.hb.controller.ListController">
+   		<property name="dao" ref="dao" />
+   </bean>
+
+	<bean name="/detail.do" class="net.hb.controller.DetailController">
+   		<property name="dao" ref="dao" />
+   </bean>
+   
+   <bean name="/delete.do" class="net.hb.controller.DeleteController">
+   		<property name="dao" ref="dao"/>
+   </bean>
+   
+   <!-- 06-02-화요일 -->
+    <bean name="/editPre.do"  class="net.hb.controller.EditPreController">
+		<property name="dao"  ref="dao"/>
+    </bean>
+   
+    <bean name="/edit.do" class="net.hb.controller.EditController">
+   		<property name="commandClass"  value="net.hb.dto.GuestDTO"/>
+   		<property name="dao" ref="dao" />
+    </bean>
+
+	<!-- ViewResolver 설정-->
+	<bean id="viewResolver"	class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/guest/"/>
+		<property name="suffix" value=".jsp"/>
+		<property name="contentType" value="text/html; charset=UTF-8" />
+	</bean>
+	
+</beans>
+
+
+
+
+
+
+
+
+
