@@ -1,0 +1,39 @@
+@CHARSET "EUC-KR";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+label {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 0.75rem;
+  padding-right: 0.00rem;
+}
+
+.ta2 {
+	color: blue;
+	font-size: 9pt;
+}
+
+.ta3 {
+	color: red;
+	font-size: 9pt;
+	padding-left: 0.75rem;
+}
+
+.logintext{
+	color: #fefefe;
+}

@@ -1,0 +1,56 @@
+drop table review;
+
+create  table  review (     
+ num number primary key,
+roomid varchar2(10),
+ name varchar2(20),
+ pwd varchar2(20),
+ title varchar2(100),
+ content varchar2(3000),
+ sdate date,
+ hot number
+);
+
+drop sequence review_num_seq;
+create sequence review_num_seq;
+
+insert into review values(review_num_seq.nextval,'101','aaa','1234','aaa','aaa',sysdate,0);
+insert into review values(review_num_seq.nextval,'201','bbb','1234','bbb','bbb',sysdate,0);
+insert into review values(review_num_seq.nextval,'301','aaa','1234','ccc','ccc',sysdate,0);
+insert into review values(review_num_seq.nextval,'401','dsf','1234','','ccc',sysdate,0);
+insert into review values(review_num_seq.nextval,'501','zvx','1234','ccc','ccc',sysdate,0);
+
+insert into review values(review_num_seq.nextval,'101','eee','1234','aaa','aaa',sysdate,0);
+insert into review values(review_num_seq.nextval,'201','eee','1234','bbb','bbb',sysdate,0);
+insert into review values(review_num_seq.nextval,'301','eee','1234','ccc','ccc',sysdate,0);
+insert into review values(review_num_seq.nextval,'401','eee','1234','','ccc',sysdate,0);
+insert into review values(review_num_seq.nextval,'501','eee','1234','ccc','ccc',sysdate,0);
+
+insert into review values(review_num_seq.nextval,'101','ddd','1234','aaa','aaa',sysdate,0);
+insert into review values(review_num_seq.nextval,'201','ddd','1234','bbb','bbb',sysdate,0);
+insert into review values(review_num_seq.nextval,'301','ddd','1234','ccc','ccc',sysdate,0);
+insert into review values(review_num_seq.nextval,'401','ddd','1234','','ccc',sysdate,0);
+insert into review values(review_num_seq.nextval,'501','ddd','1234','ccc','ccc',sysdate,0);
+
+insert into review values(review_num_seq.nextval,'101','ggg','1234','aaa','aaa',sysdate,0);
+insert into review values(review_num_seq.nextval,'201','ggg','1234','bbb','bbb',sysdate,0);
+insert into review values(review_num_seq.nextval,'301','ggg','1234','ccc','ccc',sysdate,0);
+insert into review values(review_num_seq.nextval,'401','ggg','1234','','ccc',sysdate,0);
+insert into review values(review_num_seq.nextval,'501','ggg','1234','ccc','ccc',sysdate,0);
+
+insert into review values(review_num_seq.nextval,'102','vff','1234','ddd','ddd',sysdate,0);
+insert into review values(review_num_seq.nextval,'202','asdf','1234','fff','fff',sysdate,0);
+insert into review values(review_num_seq.nextval,'302','asdf','1234','ggg','ggg',sysdate,0);
+insert into review values(review_num_seq.nextval,'402','rey','1234','ccc','ccc',sysdate,0);
+insert into review values(review_num_seq.nextval,'502','rmn','1234','ccc','ccc',sysdate,0);
+
+
+insert into review values(review_num_seq.nextval,'103','nfd','1234','ddd','ddd',sysdate,0);
+insert into review values(review_num_seq.nextval,'203','adf','1234','fff','fff',sysdate,0);
+insert into review values(review_num_seq.nextval,'303','uey','1234','ggg','ggg',sysdate,0);
+insert into review values(review_num_seq.nextval,'403','opi','1234','ccc','ccc',sysdate,0);
+insert into review values(review_num_seq.nextval,'503','mhg','1234','ccc','ccc',sysdate,0);
+
+
+
+commit;

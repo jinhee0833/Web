@@ -1,0 +1,53 @@
+//event7 table________________________________________________
+
+drop table event7;
+create  table  event7 (     
+ num number primary key,
+ filename varchar2(50),
+ th_filename varchar2(50),
+ title varchar2(100),
+ content varchar2(3000),
+ e_start date,
+ e_end date,
+ sdate date,
+ hit number
+);
+create sequence event7_num_seq;
+
+insert into event7 values(event7_num_seq.nextval, 'event01.jpg','th_event01.jpg','Urban BBQ Feast','8~9�썡 留ㅼ＜ 湲�,�넗�슂�씪(�떒, 9�썡 5,6,20�씪 �젣�쇅) *紐⑤뱺 �븷�씤 �삙�깮 �쟻�슜 媛��뒫(�떒, 二쇰쪟�뒗 �젣�쇅) * 1�씤 1硫붾돱 諛섎뱶�떆 二쇰Ц * �삁�빟 諛� 臾몄쓽 02 1234 1234 * 留ㅼ＜ �넗�슂�씪 猷⑤굹�옄 �옱利덇났�뿰','14/08/01','14/09/30',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event02.jpg','th_event02.jpg','Healthy Italian SALAD BUFFET','�떊�꽑�븳 �젣泥� �떇�옱猷뚮줈 留뚮뱺 �븞�떚�뙆�뒪�넗�� �깘�윭�뱶瑜� 利먭린怨� �뙆�뒪�� �깮�꽑, �븳�슦 �뒪�뀒�씠�겕 �벑 痍⑦뼢�뿉 留욊쾶 硫붿씤�뵒�떆瑜� �꽑�깮�븯�뒗 �씠�깉由ъ븞 嫄닿컯�떇 遺��럹瑜� �꽑蹂댁엯�땲�떎.','14/07/01','14/10/31',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event03.jpg','th_event03.jpg','吏�以묓빐�떇 誘멸컖 �뿬�뻾','誘몄뒓�옲�뿉�꽌�뒗 異⑸궓 �삁�궛 �냽�옣�뿉�꽌 吏곸젒 �궎�슫 �떊�꽑�븳 梨꾩냼�� �빐�궛臾�, �삱由щ툕, 諛쒗슚�떇�뭹 �벑 嫄닿컯�븳 �떇�옱猷뚮�� �궗�슜�빐 吏�以묓빐 �뿰�븞 �뿬�윭 �굹�씪�뱾�쓽 �쟾�넻 硫붾돱瑜� �꽑蹂댁엯�땲�떎.','14/09/01','14/10/31',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event04.jpg','th_event04.jpg','ONLY FOR YOU special wedding','2014�뀈 9~12�썡 �삁�떇 怨좉컼�쓣 �쐞�븳 MJ HOTEL�쓽 �뭹寃� �넂�� �삙�깮�뱾�씠 �븘由꾨떎�슫 �닚媛꾩쓣 �뜑�슧 李щ��븯寃� 鍮쏅궡�뱶由쎈땲�떎.','14/09/01','14/12/31',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event05.jpg','th_event05.jpg','Weekend Brunch Buffet','�떛洹몃윭�슫 �뻼�궡�씠 �궡由ъ쵎�뒗 �쟾硫� �넻�쑀由щ�� �넻�빐 �샇�뀛 �쟾寃쎌쓣 諛붾씪蹂대ŉ �뿬�쑀 �엳�뒗 �떇�궗瑜� 利먭린湲곗뿉 醫뗭� 釉뚮윴移� 遺��럹濡� 珥덈��빀�땲�떎.','14/06/01','14/10/31',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event06.jpg','th_event06.jpg','�옄�뿰�씠 �궡�븘�엳�뒗 移쒗솚寃� �떇�옱猷�','MJ HOTEL�씠 吏곸젒 �슫�쁺�븯�뒗 異⑹껌�궓�룄 �삁�궛�냽�옣�뿉�꽌 �젙�꽦�뒪�젅 �궎�슫 梨꾩냼瑜� �떇�옱猷뚮줈 �궗�슜�빐 �떊�꽑�븯怨� �븞�쟾�븳 �떇�긽�쓣 留뚮뱾�뼱 �뱶由쎈땲�떎.','14/08/01','14/09/30',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event01.jpg','th_event01.jpg','Urban BBQ Feast','8~9�썡 留ㅼ＜ 湲�,�넗�슂�씪(�떒, 9�썡 5,6,20�씪 �젣�쇅) *紐⑤뱺 �븷�씤 �삙�깮 �쟻�슜 媛��뒫(�떒, 二쇰쪟�뒗 �젣�쇅) * 1�씤 1硫붾돱 諛섎뱶�떆 二쇰Ц * �삁�빟 諛� 臾몄쓽 02 1234 1234 * 留ㅼ＜ �넗�슂�씪 猷⑤굹�옄 �옱利덇났�뿰','14/08/01','14/09/30',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event02.jpg','th_event02.jpg','Healthy Italian SALAD BUFFET','�떊�꽑�븳 �젣泥� �떇�옱猷뚮줈 留뚮뱺 �븞�떚�뙆�뒪�넗�� �깘�윭�뱶瑜� 利먭린怨� �뙆�뒪�� �깮�꽑, �븳�슦 �뒪�뀒�씠�겕 �벑 痍⑦뼢�뿉 留욊쾶 硫붿씤�뵒�떆瑜� �꽑�깮�븯�뒗 �씠�깉由ъ븞 嫄닿컯�떇 遺��럹瑜� �꽑蹂댁엯�땲�떎.','14/07/01','14/10/31',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event03.jpg','th_event03.jpg','吏�以묓빐�떇 誘멸컖 �뿬�뻾','誘몄뒓�옲�뿉�꽌�뒗 異⑸궓 �삁�궛 �냽�옣�뿉�꽌 吏곸젒 �궎�슫 �떊�꽑�븳 梨꾩냼�� �빐�궛臾�, �삱由щ툕, 諛쒗슚�떇�뭹 �벑 嫄닿컯�븳 �떇�옱猷뚮�� �궗�슜�빐 吏�以묓빐 �뿰�븞 �뿬�윭 �굹�씪�뱾�쓽 �쟾�넻 硫붾돱瑜� �꽑蹂댁엯�땲�떎.','14/09/01','14/10/31',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event04.jpg','th_event04.jpg','ONLY FOR YOU special wedding','2014�뀈 9~12�썡 �삁�떇 怨좉컼�쓣 �쐞�븳 MJ HOTEL�쓽 �뭹寃� �넂�� �삙�깮�뱾�씠 �븘由꾨떎�슫 �닚媛꾩쓣 �뜑�슧 李щ��븯寃� 鍮쏅궡�뱶由쎈땲�떎.','14/09/01','14/12/31',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event05.jpg','th_event05.jpg','Weekend Brunch Buffet','�떛洹몃윭�슫 �뻼�궡�씠 �궡由ъ쵎�뒗 �쟾硫� �넻�쑀由щ�� �넻�빐 �샇�뀛 �쟾寃쎌쓣 諛붾씪蹂대ŉ �뿬�쑀 �엳�뒗 �떇�궗瑜� 利먭린湲곗뿉 醫뗭� 釉뚮윴移� 遺��럹濡� 珥덈��빀�땲�떎.','14/06/01','14/10/31',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event06.jpg','th_event06.jpg','�옄�뿰�씠 �궡�븘�엳�뒗 移쒗솚寃� �떇�옱猷�','MJ HOTEL�씠 吏곸젒 �슫�쁺�븯�뒗 異⑹껌�궓�룄 �삁�궛�냽�옣�뿉�꽌 �젙�꽦�뒪�젅 �궎�슫 梨꾩냼瑜� �떇�옱猷뚮줈 �궗�슜�빐 �떊�꽑�븯怨� �븞�쟾�븳 �떇�긽�쓣 留뚮뱾�뼱 �뱶由쎈땲�떎.','14/08/01','14/09/30',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event07.jpg','th_event07.png','�샇�뀛 �뒪�뙆 �씠�슜沅�','�샇�뀛 �뒪�뙆 �씠�슜沅�, �뒪�뙆�쓽 �떎�뼇�븳 �봽濡쒓렇�옩怨� �꽌鍮꾩뒪瑜� 怨좊쭏�슫 遺꾨뱾�뿉寃� �꽑臾쇳븯�꽭�슂.','14/05/01','14/11/30',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event08.jpg','th_event08.jpg','�젏�떖 �듅�꽑 硫붾돱','�쟾�넻 �븳�젙�떇�떦 遊됰옒�뿄�뿉�꽌 �뾼�꽑�맂 �옱猷뚮줈 �젙�꽦猿� �떞�븘�궦 �젏�떖 �듅�꽑�쓣 以�鍮꾪븯���뒿�땲�떎.','14/09/15','14/11/14',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'thumb1.png','1.png','Brewing Coffee Time','而ㅽ뵾�쓽 源딆� �뼢�쓣 �뒓�굜 �닔 �엳�뒗 Amy �빖�뱶�뱶由� 而ㅽ뵾','14/04/01','14/06/30',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'thumb2.png','2.png','�깮諛붾굹�굹 �꽑�떇 諛��겕','�뒪�뀒�뵒���윭 �꽑�젙 湲곕뀗 �궗���뻾�궗','14/06/01','14/08/31',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event03.jpg','th_event03.jpg','吏�以묓빐�떇 誘멸컖 �뿬�뻾','誘몄뒓�옲�뿉�꽌�뒗 異⑸궓 �삁�궛 �냽�옣�뿉�꽌 吏곸젒 �궎�슫 �떊�꽑�븳 梨꾩냼�� �빐�궛臾�, �삱由щ툕, 諛쒗슚�떇�뭹 �벑 嫄닿컯�븳 �떇�옱猷뚮�� �궗�슜�빐 吏�以묓빐 �뿰�븞 �뿬�윭 �굹�씪�뱾�쓽 �쟾�넻 硫붾돱瑜� �꽑蹂댁엯�땲�떎.','14/02/01','14/7/31',sysdate,0);
+insert into event7 values(event7_num_seq.nextval, 'event04.jpg','th_event04.jpg','ONLY FOR YOU special wedding','2014�뀈 9~12�썡 �삁�떇 怨좉컼�쓣 �쐞�븳 MJ HOTEL�쓽 �뭹寃� �넂�� �삙�깮�뱾�씠 �븘由꾨떎�슫 �닚媛꾩쓣 �뜑�슧 李щ��븯寃� 鍮쏅궡�뱶由쎈땲�떎.','14/03/01','14/6/30',sysdate,0);
+//r_event7 table________________________________________________
+
+drop table r_event7;
+create table r_event7(
+ r_num number primary key,
+ num number,
+ r_name varchar2(20),
+ r_content varchar2(3000),
+ r_passwd varchar2(10),
+ r_sdate date
+);
+drop sequence r_event7_num_seq;
+create sequence r_event7_num_seq;
+
+
+select  * from  event7  where num=5 ;
+insert into r_event7 values(r_event7_num_seq.nextval, 5, 'aaa', 'aaaaa', '1234', sysdate);
+
+commit;

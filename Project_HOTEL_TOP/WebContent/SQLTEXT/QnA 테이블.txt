@@ -1,0 +1,100 @@
+
+drop table qna;
+create table qna (
+ num number primary key,
+	 type varchar2(10) not null,
+	 title varchar2(100) not null,
+	 name varchar2(20) not null,
+		 content varchar2(3000) not null,
+	 nalja date not null,
+	 hit number not null,
+	 secret number,
+		 reply varchar2(3000)
+);
+
+drop sequence qna_pk;
+create sequence qna_pk;
+
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', '¼Õ»óÇå', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '°´½Ç', '¹®ÀÇµå¸³´Ï´Ù', 'ÇãÀ¯Áø', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', 'Á¤ÁÖÇå', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '´Ï½Ã¿À', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±èÀü°â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', 'ÀÌÁøÈñ', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±èÅÂÈñ', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', 'ÀüÁöÇö', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '¹ÚÇÑº°', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', '¼Õ»óÇå', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '°´½Ç', '¹®ÀÇµå¸³´Ï´Ù', 'ÇãÀ¯Áø', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', 'Á¤ÁÖÇå', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '´Ï½Ã¿À', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±èÀü°â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', 'ÀÌÁøÈñ', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±èÅÂÈñ', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', 'ÀüÁöÇö', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '¹ÚÇÑº°', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', 'ÀüÁöÇö', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '°´½Ç', '¹®ÀÇµå¸³´Ï´Ù', '°í¼ÒÇØ', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', 'Â¯³ª¶ó', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '¹ÚÇÑº°', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', '¼Õ»óÇå', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '°´½Ç', '¹®ÀÇµå¸³´Ï´Ù', 'ÇãÀ¯Áø', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', 'Á¤ÁÖÇå', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '´Ï½Ã¿À', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±èÀü°â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', 'ÀÌÁøÈñ', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±èÅÂÈñ', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', 'ÀüÁöÇö', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '¹ÚÇÑº°', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', 'ÀüÁöÇö', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '°´½Ç', '¹®ÀÇµå¸³´Ï´Ù', '°í¼ÒÇØ', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', 'Â¯³ª¶ó', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '¹ÚÇÑº°', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', '¼Õ»óÇå', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '°´½Ç', '¹®ÀÇµå¸³´Ï´Ù', 'ÇãÀ¯Áø', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', 'Á¤ÁÖÇå', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '´Ï½Ã¿À', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±èÀü°â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', 'ÀÌÁøÈñ', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±èÅÂÈñ', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', 'ÀüÁöÇö', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '¹ÚÇÑº°', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '½Ã¼³', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 1, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '¿¹¾à', '¹®ÀÇµå¸³´Ï´Ù', '±è»ó±â', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+insert into qna values (qna_pk.nextval, '±âÅ¸', '¹®ÀÇµå¸³´Ï´Ù', '¼ºÁ¤È¯', '¤»¤»¤»¤»', sysdate, 0, 0, '¤»¤»¤»¤»');
+commit;

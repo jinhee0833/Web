@@ -1,0 +1,37 @@
+
+drop table top_login;
+create table top_login(
+	id varchar2(16) not null primary key,
+	pw varchar2(16) not null,
+	name varchar2(10) not null,
+	birth date not null,
+	addr varchar2(50),
+	email varchar2(40),
+	tel varchar2(20) not null,
+	mem number(1) not null
+);
+
+delete from top_login;
+
+insert into top_login values('admin', '1234', 'admin', '86/07/19', '', 'admin@tophotel.com', '01071125564', 1);
+insert into top_login values('sangi', '1234', 'sangi', '00/01/01', '', 'sangi@tophotel.com', '01012345678', 1);
+insert into top_login values('sshon', '1234', 'sshon', '00/01/01', '', 'sshon@tophotel.com', '01012345678', 0);
+insert into top_login values('hb', '1234', 'hb', '99/09/09', '', 'hanbit@tophotel.com', '01058585858', 1);
+insert into top_login values('coffee', '1234', 'coffee', '66/06/06', '', 'coffee@tophotel.com', '01012123434', 0);
+insert into top_login values('admin', '1234', 'admin', '86/07/19', '', 'admin@tophotel.com', '01071125564', 0);
+
+commit;
+
+drop table zipcode;
+create table zipcode(
+	ID	INT,
+	ZIPCODE	VARCHAR2(7),
+	SIDO	VARCHAR2(8),
+	GUGUN	VARCHAR2(16),
+	DONG	VARCHAR2(20),
+	RI	VARCHAR2(30),
+	BUNJI	VARCHAR2(40),
+	PRIMARY KEY (ID)
+);
+
+
