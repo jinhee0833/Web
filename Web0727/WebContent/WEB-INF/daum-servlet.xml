@@ -1,0 +1,91 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	
+	<!-- naver-servlet.xml문서  07-27-화요일 -->
+
+	<bean id="handlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+	
+	<bean name="/guest.do"  class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="guest"/>
+	</bean>	
+	
+	<bean name="/three.do"  class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="three"/>
+	</bean>	
+	
+   <bean name="/insert.do" class="net.hb.controller.InsertController">
+   		<property name="commandClass"  value="net.hb.dto.GuestDTO"/>
+   		<property name="dao" ref="dao"/> 		
+   </bean>
+   
+    <bean name="/edit.do" class="net.hb.controller.EditController">
+   		<property name="commandClass"  value="net.hb.dto.GuestDTO"/>
+   		<property name="dao" ref="dao"/> 		
+   </bean>
+   <bean name="/editpre.do"  class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="guestEdit"/>
+	</bean>	
+    <bean name="/detail.do" class="net.hb.controller.DetailContoller">
+   		<property name="commandClass"  value="net.hb.dto.GuestDTO"/>
+   		<property name="dao" ref="dao"/> 		
+   </bean>
+   
+    <bean name="/select.do" class="net.hb.controller.ListContoller">
+   		<property name="dao"  ref="dao"/>
+   		
+   </bean>
+   
+   <bean name="/search.do" class="net.hb.controller.searchController">
+   		<property name="commandClass"  value="net.hb.dto.GuestDTO"/>
+   		<property name="dao" ref="dao"/> 		
+   </bean>
+   
+   <bean name="/two.do"  class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="two"/>
+	</bean>
+	
+	
+	
+	 <bean name="/delete.do" class="net.hb.controller.DeleteController">
+   		<property name="commandClass"  value="net.hb.dto.GuestDTO"/>
+   		<property name="dao" ref="dao" />
+   </bean>
+
+	<!-- aop적용 -->
+	<!--  xml문서쿼리를 접근하는 DAO,DAO에 접근하는 컨트롤에서 자동호출 실행 -->
+	<!-- 컨트롤 메소드호출할때 자동호출되는 메소드에 적용 => 로그파일기록파일 보안, 트랜젝션-->
+	<bean id="logging" class="net.hb.aop.BankCheck"/>
+	<aop:aspectj-autoproxy/>
+	<!-- 	<aop:config>
+		<aop:pointcut expression = "execution(public * net.hb.controller..*(..))" id="pointcut"/>
+		<aop:aspect id="loggin-aspect" ref="logging">
+			<aop:before method="open" pointcut-ref="pointcut"/>
+			<aop:after method="close" pointcut-ref="pointcut"/>
+		</aop:aspect>
+	</aop:config>
+	 -->
+	
+	<!-- ViewResolver 설정-->
+	<bean id="viewResolver"	class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/board/"/>
+		<property name="suffix" value=".jsp"/>
+		<property name="contentType" value="text/html; charset=UTF-8" />
+	</bean>
+	
+</beans>
+
+
+
+
+
+
+
+
+

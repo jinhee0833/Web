@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+ <sqlMap>
+ 	<typeAlias alias="dto" type="net.hb.dto.GuestDTO"/>	
+ 	
+ 	<insert id="add">
+ 		insert into guest values(#sabun#,#name#,#title#,sysdate,#pay#)		
+  	</insert>
+ 	
+ 	<select id="selectAll"  parameterClass="net.hb.dto.GuestDTO"   resultClass="net.hb.dto.GuestDTO">
+ 		select * from (select rownum rn, g.* from (
+ 		select * from guest where $skey$ like '%' || sval || '%' order by sabun ) g) where rn between #start# and #end#
+ 	</select>
+ 	
+ 	<select id="selectAllCOPY"  resultClass="net.hb.dto.GuestDTO">
+ 		select * from guest order by sabun
+ 	</select>
+ 	
+ 	<update id="edit">
+ 		update guest set pay=#pay#,title=#title#,name=#name# where sabun=#sabun#
+ 	</update>
+ 	
+ 	<delete id="del" >
+ 		delete from guest where sabun = #sabun#		
+ 	</delete>
+ 	
+ 	<select id="countAll" resultClass="int" >
+ 		select count(*) as cnt from guest
+ 	</select>
+ 	
+ 	<select id="search2"  resultClass="net.hb.dto.GuestDTO">
+ 		select * from guest 
+ 		<dynamic prepend="where"> 
+ 			<isNotEmpty property="name" prepend="AND">
+					name like '%'||#name#||'%'
+ 			</isNotEmpty>
+ 			
+ 			
+ 			<isNotEmpty property="title" prepend="AND">
+					title like '%'||#title#||'%'
+ 			</isNotEmpty>
+ 			
+ 			<isNotEmpty property="sabun" prepend="AND">
+					sabun like '%'||#sabun#||'%'
+ 			</isNotEmpty>
+ 		</dynamic>
+ 		
+ 	</select>
+ 	
+ 	<select id="detail" resultClass="net.hb.dto.GuestDTO">
+ 		select * from guest where sabun= #sabun#
+ 	</select>
+ 	
+ 	
+ 	
+ </sqlMap>   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
